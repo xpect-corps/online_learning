@@ -23,9 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $app_users = '';
-        $foods= '';
-        // dd($app_users);
-        return view('home',compact('app_users','foods'));
+        return view('home');
     }
 }
