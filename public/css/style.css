@@ -304,8 +304,8 @@ button.bg-danger:hover {
 	color: #000 !important;
 }
 .btn-primary {
-	background-color: #FF875A;
-	border: 1px solid #FF875A;
+	background-color: #108ac5;
+	border: 1px solid #108ac5;
 }
 .bg-blue {
 	background: #392C7D;
@@ -336,8 +336,8 @@ button.bg-danger:hover {
 .btn-primary.active,
 .btn-primary:active,
 .open > .dropdown-toggle.btn-primary {
-	background-color: #fc7f50;
-	border: 1px solid #fc7f50;
+	background-color: #0391d8;
+	border: 1px solid #0391d8;
 }
 .btn-primary.active.focus,
 .btn-primary.active:focus,
@@ -348,14 +348,14 @@ button.bg-danger:hover {
 .open > .dropdown-toggle.btn-primary.focus,
 .open > .dropdown-toggle.btn-primary:focus,
 .open > .dropdown-toggle.btn-primary:hover {
-	background-color: #fc7f50;
-	border: 1px solid #fc7f50;
+	background-color: #0391d8;
+	border: 1px solid #0391d8;
 }
 .btn-primary.active:not(:disabled):not(.disabled),
 .btn-primary:active:not(:disabled):not(.disabled),
 .show > .btn-primary.dropdown-toggle {
-	background-color: #fc7f50;
-	border-color: #fc7f50;
+	background-color: #0391d8;
+	border-color: #0391d8;
 	color: #fff;
 }
 .btn-primary.active:focus:not(:disabled):not(.disabled), 
@@ -744,12 +744,13 @@ button.bg-danger:hover {
 	background-color: #fff;
 }
 .card {
-    border: 1px solid #e9ecef;
+    border:0;
     margin-bottom: 1.875rem;
     border-radius: 0;
 }
 .card-body {
 	padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .card-title {
     margin-bottom: 15px;
@@ -12045,7 +12046,7 @@ textarea:focus {
 }
 .strong-active span.active#poor, .strong-active span.active#weak, .strong-active span.active#strong,
 .strong-active span.active#poors, .strong-active span.active#weaks, .strong-active span.active#strongs {
-	background: #1D9CFD;
+	background: #108ac5;
 }
 .heavy-active span.active#poor, .heavy-active span.active#weak, .heavy-active span.active#strong, .heavy-active span.active#heavy,
 .heavy-active span.active#poors, .heavy-active span.active#weaks, .heavy-active span.active#strongs, .heavy-active span.active#heavys {
@@ -12079,6 +12080,7 @@ input[type=password]::-ms-clear
 .breadcrumb-bar {
     background: #FFF;
     padding: 25px 0;
+    border-radius: 10px;
 }
 .breadcrumb-list {
 	display: flex;
@@ -13078,7 +13080,7 @@ input[type=password]::-ms-clear
 	color: #FFF;
 }
 .btn-contact {
-	background: #1D9CFD;
+	background: #108ac5;
 }
 .btn-contact:hover {
 	background: #0d92f7;
@@ -13375,8 +13377,8 @@ input[type=password]::-ms-clear
 	margin-right: 15px;
 }
 .edu-name span {
-	width: 40px;
-	height: 40px;
+    width: 25px;
+    height: 25px;
 	background: #FF5364;
 	border-radius: 50%;
 	color: #FFFFFF;
@@ -13548,7 +13550,7 @@ input[type=password]::-ms-clear
 	margin-top: 23px;
 }
 .contact-info-list .edu-wrap:not(:last-child) {
-	margin-bottom: 23px;
+margin-bottom: 7px;
 }
 
 /*-----------------
@@ -13648,8 +13650,8 @@ input[type=password]::-ms-clear
 }
 .student-list .student-content {
     width: 100%;
-    text-align: left;
-    padding: 0 0 0 25px;
+    /* text-align: left; */
+    /* padding: 0 0 0 25px; */
 }
 .student-info > div {
 	width: auto;
@@ -13958,7 +13960,7 @@ input[type=password]::-ms-clear
 	border-radius: 10px;
 }
 .settings-top-widget .stat-info.net-earn h3 {
-	color: #1D9CFD;
+	color: #108ac5;
 }
 .settings-top-widget .stat-info.bal h3 {
 	color: #159F46;
@@ -13967,7 +13969,7 @@ input[type=password]::-ms-clear
 	color: #FF5364;
 }
 .settings-top-widget .stat-info.refer h3 {
-	color: #1D9CFD;
+	color: #108ac5;
 }
 .link-box h3{
 	color: #392C7D;
@@ -14039,7 +14041,7 @@ input[type=password]::-ms-clear
 ------------------------------*/
 
 .settings-top-widget .stat-info.ttl-tickets h3 {
-	color: #1D9CFD;
+	color: #108ac5;
 }
 .settings-top-widget .stat-info.open-tickets h3 {
 	color: #159F46;
@@ -14143,8 +14145,8 @@ input[type=password]::-ms-clear
 	flex-wrap: wrap;
 }
 .submit-ticket .btn-primary {
-	background: #1D9CFD;
-	border: 1px solid #1D9CFD;
+	background: #108ac5;
+	border: 1px solid #108ac5;
 	border-radius: 5px;
 	font-size: 14px;
 	font-weight: 600;
@@ -14451,7 +14453,7 @@ input[type=password]::-ms-clear
 ------------------------------*/
 
 .sell-course-head h3 {
-	color: #392C7D;
+	color: #252427;
 	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 0;
@@ -14482,7 +14484,7 @@ input[type=password]::-ms-clear
 	padding: 7px 10px;
 }
 .settings-inner-blk .info-inter {
-    background: #1D9CFD;
+    background: #108ac5;
 }
 .course-stip.progress-stip {
 	height: 8px;
@@ -14748,7 +14750,7 @@ input[type=password]::-ms-clear
 	margin-top: 0;
 }
 .settings-top-widget .stat-info.blue-tickets h3 {
-    color: #1D9CFD;
+    color: #108ac5;
 	margin-top: 0;
 }
 .student-deposit-blk .stat-info {
@@ -15066,7 +15068,7 @@ input[type=password]::-ms-clear
     border-radius: 10px;
 }
 .showing-list {
-	margin-bottom: 44px;
+	margin-bottom: 20px;
 }
 .course-design .product:hover .product-content h3 a:hover,
 .course-design .product:hover .course-name h4 a:hover {
@@ -17017,8 +17019,9 @@ input[type=password]::-ms-clear
 
 .settings-widget {
 	border: 1px solid #e9ecef;
-    margin-bottom: 30px;
+    margin-top: 30px;
 	border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px;
 }
 .settings-menu {
 	background: #fff;
@@ -17027,7 +17030,7 @@ input[type=password]::-ms-clear
 }
 .settings-menu h3 {
 	font-size: 18px;
-	color: #392C7D;
+	color: #252427;
 	font-weight: 600;
 	margin: 5px 0px 20px;
 }
@@ -17057,12 +17060,12 @@ input[type=password]::-ms-clear
 }
 .settings-menu ul li:hover, .settings-menu ul li:focus {
     color: #303030;
-	background: rgba(255, 222, 218, 0.25);
+	background: rgb(212 236 255);
 }
 .settings-menu ul li:hover:before {
 	content: "";
 	position: absolute;
-	background: #FF5364;
+	background: #108ac5;
 	width: 2px;
 	height: 40px;
 	left: 9px;
@@ -17078,7 +17081,7 @@ input[type=password]::-ms-clear
 	opacity: 0;
 	content: "";
 	position: absolute;
-	background: #FF5364;
+	background: #108ac5;
 	width: 2px;
 	height: 40px;
 	left: 9px;
@@ -17093,13 +17096,13 @@ input[type=password]::-ms-clear
 	color: #303030;
 }
 .settings-menu ul .active {
-	background: rgba(255, 222, 218, 0.25);
+	background: rgb(212 236 255);
 }
 .settings-menu ul li i {
-	color: #FF875A;
+	color: #108ac5;
 }
 .settings-menu ul .active i {
-	color: #FF875A;
+	color: #108ac5;
 }
 .settings-menu ul li a i {
 	margin-right: 15px;
@@ -17108,7 +17111,7 @@ input[type=password]::-ms-clear
 .settings-menu ul .active:before {
 	content: "";
 	position: absolute;
-	background: #FF5364;
+	background: #108ac5;
 	width: 2px;
 	height: 40px;
 	left: 9px;
@@ -17121,8 +17124,8 @@ input[type=password]::-ms-clear
 	opacity: 1;
 }
 .go-dashboard .btn-primary {
-	background: #392C7D;
-	border: 1px solid #392C7D;
+	background: #108ac5;
+	border: 1px solid #108ac5;
 	border-radius: 5px;
 	font-size: 14px;
 	color: #fff;
@@ -17516,8 +17519,8 @@ input[type=password]::-ms-clear
 }
 .btn-success-dark {
    font-weight: 600;
-    background: #159F46;
-    border: 1px solid #159F46;
+    background: #108ac5;
+    border: 1px solid #108ac5;
     color: #fff;
     border-radius: 5px;
     padding: 12px 15px;
@@ -17532,9 +17535,9 @@ input[type=password]::-ms-clear
     -ms-flex-pack: center; 
 }
 .btn-success-dark:hover {
-    background: #fff;
-    border: 1px solid #159F46;
-    color: #159F46;
+    background: #108ac5;
+    border: 1px solid #108ac5;
+    color: #fff;
 }
 .instructor-profile {
     text-align: left;
@@ -17637,6 +17640,7 @@ input[type=password]::-ms-clear
 }
 .instructor-card .card-body {
     padding: 20px;
+    border-radius: 10px;
 }
 .instructor-grid {
     background: #FFFFFF;
@@ -17780,7 +17784,7 @@ input[type=password]::-ms-clear
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     font-size: 12px;
-    background: #159F46;
+    background: #108ac5;
     color: #fff;
     width: 16px;
     height: 16px;
@@ -17791,16 +17795,16 @@ input[type=password]::-ms-clear
     position: absolute;
 }
 .progress-active p {
-    border-top: 5px solid #159F46 !important;
+    border-top: 5px solid #108ac5 !important;
 }
 .progress-activated p {
-    border-top: 5px solid #159F46 !important;
+    border-top: 5px solid #108ac5 !important;
 }
 .progress-active span {
     color: #159F46 !important;
     border-color: #159F46 !important;
     position: relative;
-    border: 5px solid #159f46 !important;
+    border: 5px solid #108ac5 !important;
 }
 .add-course-inner-header {
     padding: 0 30px 30px;
@@ -17878,14 +17882,14 @@ input[type=password]::-ms-clear
 }
 .widget-btn .btn-info-light {
     color: #fff;
-    background: #1D9CFD;
-    border: 1px solid #1D9CFD;
+    background: #108ac5;
+    border: 1px solid #108ac5;
     border-radius: 5px;
 }
 .widget-btn .btn-info-light:hover {
-    color: #1D9CFD;
+    color: #108ac5;
     background: #fff;
-    border: 1px solid #1D9CFD;
+    border: 1px solid #108ac5;
 }
 .relative-form {
     position: relative;
@@ -17913,12 +17917,13 @@ input[type=password]::-ms-clear
     cursor: pointer;
     position: absolute;
     right: 0;
+    top: 0;
     min-width: 238px;
     text-align: center;
 }
 .relative-file-upload input[type="file"] {
     position: absolute;
-    top: 0;
+    top: -15px;
     right: 0;
     text-align: right;
     filter: alpha(opacity=0);
@@ -17930,7 +17935,7 @@ input[type=password]::-ms-clear
 }
 .add-image-box {
     min-height: 250px;
-    background: #edede8;
+    background: #a5d7fe33;
     border-radius: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -17942,6 +17947,7 @@ input[type=password]::-ms-clear
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     width: 100%;
+    padding: 30px
 }
 .add-image-box a {
     font-size: 200px;
@@ -17960,17 +17966,17 @@ input[type=password]::-ms-clear
 .add-course-section .btn {
     font-weight: 600;
     font-size: 14px;
-    color: #1D9CFD;
+    color: #108ac5;
     background: #FFFFFF;
-    border: 1px solid #1D9CFD;
+    border: 1px solid #108ac5;
     border-radius: 5px;
     min-width: 105px;
     padding: 7px 10px;
 }
 .add-course-section .btn:hover {
     color: #FFFFFF;
-    background: #1D9CFD;
-    border: 1px solid #1D9CFD;
+    background: #108ac5;
+    border: 1px solid #108ac5;
 }
 .curriculum-grid {
     padding: 20px;
@@ -17998,17 +18004,17 @@ input[type=password]::-ms-clear
 .curriculum-head .btn {
     font-weight: 600;
     font-size: 14px;
-    color: #1D9CFD;
+    color: #108ac5;
     background: #FFFFFF;
-    border: 1px solid #1D9CFD;
+    border: 1px solid #108ac5;
     border-radius: 5px;
     min-width: 105px;
     padding: 7px 10px;
 }
 .curriculum-head .btn:hover {
     color: #FFFFFF;
-    background: #1D9CFD;
-    border: 1px solid #1D9CFD;
+    background: #108ac5;
+    border: 1px solid #108ac5;
 }
 .faq-grid {
     background: #FFFFFF;
@@ -18168,7 +18174,7 @@ input[type=password]::-ms-clear
     color: #159F46;
 }
 .instructor-inner .instructor-text-info {
-    color: #1D9CFD;
+    color: #108ac5;
 }
 .instructor-inner .instructor-text-warning {
     color: #FFB54A;

@@ -1,6 +1,12 @@
 <?php
 
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin\AdminCategoryController;
+use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\AdminCourseController;
+use App\Http\Controllers\Admin\AdminNotificationController;
+use App\Http\Controllers\Admin\AdminPaymentController;
+use App\Http\Controllers\Admin\AdminStudentController;
+use App\Http\Controllers\Admin\AdminTutorController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,7 +33,17 @@ Auth::routes();
 // Admin Route
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
   
-    Route::get('/admin/home', [AdminController::class, 'dashboard'])->name('admin.home');
+    Route::get('/admin/home', [AdminDashboardController::class, 'dashboard'])->name('admin.home');
+    Route::get('/admin/course', [AdminCourseController::class, 'index']);
+    Route::get('/admin/newcourse', [AdminCourseController::class, 'create']);
+    Route::get('/admin/notification', [AdminNotificationController::class, 'index']);
+    Route::get('/admin/students', [AdminStudentController::class, 'index']);
+    Route::get('/admin/studentsView', [AdminStudentController::class, 'show']);
+    Route::get('/admin/Category', [AdminCategoryController::class, 'index']);
+    Route::get('/admin/tutor', [AdminTutorController::class, 'index']);
+    Route::get('/admin/tutorcreate', [AdminTutorController::class, 'create']);
+    Route::get('/admin/tutorshow', [AdminTutorController::class, 'show']);
+    Route::get('/admin/payment', [AdminPaymentController::class, 'index']);
 });
 
 

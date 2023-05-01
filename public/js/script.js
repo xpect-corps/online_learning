@@ -1097,5 +1097,49 @@ Version      : 1.0
 			console.error( err.stack );
 		} );
 	}
+
+	// image upload
+
+	// Get file input element
+	let fileInput = document.getElementById('myFile');
+	let span = document.getElementById('fileName');
+	// Fires on file upload
+	fileInput.addEventListener('change', function(event) {
+
+		// Get file name
+		let fileName = fileInput.files[0].name;
+console.log(fileName);
+		// Update file name in span
+		span.innerText = fileName;
+	});
+
+	
+	// videoupload 
+
+	const videoSrc = document.querySelector("#video-source");
+	const videoTag = document.querySelector("#video-tag");
+	const inputTag = document.querySelector("#input-tag");
+	
+	inputTag.addEventListener('change',  readVideo)
+	
+	function readVideo(event) {
+	  console.log(event.target.files)
+	  if (event.target.files && event.target.files[0]) {
+		var reader = new FileReader();
+		
+		reader.onload = function(e) {
+		  console.log('loaded')
+		  videoSrc.src = e.target.result
+		  console.log(e.target.result)
+		  videoTag.load()
+		}.bind(this)
+	
+		reader.readAsDataURL(event.target.files[0]);
+	  }
+	}
+
+	// profile upload 
+
+
 	
 })(jQuery);

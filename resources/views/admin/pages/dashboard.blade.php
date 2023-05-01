@@ -5,7 +5,7 @@
         <div class="row">
 
             <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
-                <div class="settings-widget dash-profile">
+                {{-- <div class="settings-widget dash-profile">
                     <div class="settings-menu p-0">
                         <div class="profile-bg">
                             <h5>Beginner</h5>
@@ -24,94 +24,44 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <div class="settings-widget account-settings">
                     <div class="settings-menu">
                         <h3>DASHBOARD</h3>
                         <ul>
-                            <li class="nav-item active">
-                                <a href="instructor-dashboard.html" class="nav-link">
+                            <li class="nav-item active ">
+                                <a href="{{ url('/admin/home') }}" class="nav-link">
                                     <i class="feather-home"></i> My Dashboard
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="instructor-course.html" class="nav-link">
+                            <li class="nav-item ">
+                                <a href="{{ url('/admin/course') }}" class="nav-link">
                                     <i class="feather-book"></i> My Courses
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="instructor-reviews.html" class="nav-link">
-                                    <i class="feather-star"></i> Reviews
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="instructor-earnings.html" class="nav-link">
-                                    <i class="feather-pie-chart"></i> Earnings
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="instructor-orders.html" class="nav-link">
-                                    <i class="feather-shopping-bag"></i> Orders
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="instructor-student-grid.html" class="nav-link">
-                                    <i class="feather-users"></i> Students
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="instructor-payouts.html" class="nav-link">
-                                    <i class="feather-dollar-sign"></i> Payouts
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="instructor-tickets.html" class="nav-link">
-                                    <i class="feather-server"></i> Support Tickets
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="instructor-title">
-                            <h3>ACCOUNT SETTINGS</h3>
-                        </div>
-                        <ul>
-                            <li class="nav-item">
-                                <a href="instructor-edit-profile.html" class="nav-link ">
-                                    <i class="feather-settings"></i> Edit Profile
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="instructor-security.html" class="nav-link">
-                                    <i class="feather-user"></i> Security
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="instructor-social-profiles.html" class="nav-link">
-                                    <i class="feather-refresh-cw"></i> Social Profiles
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="instructor-notification.html" class="nav-link">
+                            <li class="nav-item ">
+                                <a href="{{ url('/admin/notification') }}" class="nav-link">
                                     <i class="feather-bell"></i> Notifications
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="instructor-profile-privacy.html" class="nav-link">
-                                    <i class="feather-lock"></i> Profile Privacy
+                            <li class="nav-item ">
+                                <a href="{{ url('/admin/students') }}" class="nav-link">
+                                    <i class="feather-users"></i> Students
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="instructor-delete-profile.html" class="nav-link">
-                                    <i class="feather-trash-2"></i> Delete Profile
+                            <li class="nav-item ">
+                                <a href="{{ url('/admin/Category') }}" class="nav-link">
+                                    <i class="feather-users"></i>Category
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="instructor-linked-account.html" class="nav-link">
-                                    <i class="feather-user"></i> Linked Accounts
+                            <li class="nav-item ">
+                                <a href="{{ url('/admin/tutor') }}" class="nav-link">
+                                    <i class="feather-users"></i> Tutor
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">
-                                    <i class="feather-power"></i> Sign Out
+                            <li class="nav-item ">
+                                <a href="{{ url('/admin/payment') }}" class="nav-link">
+                                    <i class="feather-users"></i> Payment
                                 </a>
                             </li>
                         </ul>
@@ -122,35 +72,42 @@
 
             <div class="col-xl-9 col-lg-8 col-md-12">
                 <div class="row">
-                    <div class="col-md-4 d-flex">
+                    <div class="col-md-3 d-flex">
                         <div class="card instructor-card w-100">
                             <div class="card-body">
                                 <div class="instructor-inner">
-                                    <h6>REVENUE</h6>
+                                    <h6>Total Courses</h6>
                                     <h4 class="instructor-text-success">$467.34</h4>
-                                    <p>Earning this month</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex">
+                    <div class="col-md-3 d-flex">
                         <div class="card instructor-card w-100">
                             <div class="card-body">
                                 <div class="instructor-inner">
-                                    <h6>STUDENTS ENROLLMENTS</h6>
+                                    <h6>Total Students</h6>
                                     <h4 class="instructor-text-info">12,000</h4>
-                                    <p>New this month</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex">
+                    <div class="col-md-3 d-flex">
                         <div class="card instructor-card w-100">
                             <div class="card-body">
                                 <div class="instructor-inner">
-                                    <h6>COURSES RATING</h6>
+                                    <h6>Total Earnings</h6>
                                     <h4 class="instructor-text-warning">4.80</h4>
-                                    <p>Rating this month</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex">
+                        <div class="card instructor-card w-100">
+                            <div class="card-body">
+                                <div class="instructor-inner">
+                                    <h6>Total Tutors</h6>
+                                    <h4 class="instructor-text-warning">4.80</h4>
                                 </div>
                             </div>
                         </div>

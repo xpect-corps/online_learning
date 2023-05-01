@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome/css/all.min.css')}}">
 
     <link rel="stylesheet" href="{{ asset('css/feather.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('plugins/select2/css/select2.min.css')}}" />
+
+    <link
+      rel="stylesheet"
+      href="{{asset('plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css')}}"
+    />
 
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
 </head>
@@ -29,14 +36,18 @@
         <div class="page-content instructor-page-content">
             @yield('content')
         </div>
-        @include('admin.layouts.components.footer')
+        {{-- @include('admin.layouts.components.footer') --}}
 
     </div>
     <script data-cfasync="false" src="{{ asset('js/cloudflare/email-decode.min.js')}}"></script>
     <script src="{{ asset('js/jquery-3.6.0.min.js')}}"></script>
 
     <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('plugins/select2/js/select2.min.js')}}"></script>
 
+    <script src="{{asset('js/ckeditor.js')}}"></script>
+
+    <script src="{{asset('plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js')}}"></script>
     <script src="{{ asset('plugins/feather/feather.min.js')}}"></script>
 
     <script src="{{ asset('plugins/theia-sticky-sidebar/ResizeSensor.js')}}"></script>
