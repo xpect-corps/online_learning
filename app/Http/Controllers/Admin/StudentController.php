@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AdminCourseController extends Controller
+class StudentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AdminCourseController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.course.index');
+      return view('admin.pages.students.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class AdminCourseController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.course.create');
+        //
     }
 
     /**
@@ -44,9 +44,9 @@ class AdminCourseController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        return view('admin.pages.students.show');
     }
 
     /**

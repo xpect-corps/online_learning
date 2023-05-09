@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AdminStudentController extends Controller
+class TutorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AdminStudentController extends Controller
      */
     public function index()
     {
-      return view('admin.pages.students.index');
+       return view('admin.pages.tutor.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class AdminStudentController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.tutor.create');
     }
 
     /**
@@ -46,7 +46,7 @@ class AdminStudentController extends Controller
      */
     public function show()
     {
-        return view('admin.pages.students.show');
+        return view('admin.pages.tutor.show');
     }
 
     /**
