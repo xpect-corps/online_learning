@@ -80,32 +80,34 @@
                     </div>
                 </div>
             </div> --}}
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <div class="add-course-header pb-0">
-                        <h2>Add New Tutor</h2>
-                        <div class="add-course-btns">
-                            <ul class="nav">
-                                <li>
-                                    <a href="{{ url('/admin/tutor') }}" class="btn btn-black">Back to Tutor</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);" class="btn btn-success-dark">Save</a>
-                                </li>
-                            </ul>
+            <form action="{{ route('admin.tutor.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="add-course-header pb-0">
+                            <h2>Add New Tutor</h2>
+                            <div class="add-course-btns">
+                                <ul class="nav"> 
+                                    <li>
+                                        <a href="{{ route('admin.tutor') }}" class="btn btn-black">Back to Tutor</a>
+                                    </li>
+                                    <li>
+                                        <button type="submit" class="btn btn-success-dark">Save</button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xl-12 col-md-12">
-                <div class="settings-widget profile-details">
-                    <div class="settings-menu p-0">
-                        <div class="page-banner student-bg-blk bg-white">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12 col-12 d-flex justify-content-center">
-                                        {{-- <div class="profile-info-blk">
+                <div class="col-xl-12 col-md-12">
+                    <div class="settings-widget profile-details">
+                        <div class="settings-menu p-0">
+                            <div class="page-banner student-bg-blk bg-white">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 col-12 d-flex justify-content-center">
+                                            {{-- <div class="profile-info-blk">
                                             <a href="javascript:;" class="profile-info-img">
                                                 <img src="assets/img/students/profile-avatar.png" alt="Profile Avatar"
                                                     class="img-fluid">
@@ -135,108 +137,125 @@
                                                 </li>
                                             </ul>
                                         </div> --}}
-                                        <div class="course-name d-flex align-items-center">
-                                            <div class="form-group">
-                                                <div class=" profile-image-circle">
-                                                    <img id="ImagePreview" class="h-100 Profile-img" src="">
+                                            <div class="course-name d-flex align-items-center">
+                                                <div class="form-group">
+                                                    <div class=" profile-image-circle">
+                                                        <img id="ImagePreview" class="h-100 Profile-img" src="">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class=" upload-profile-icon">
-                                                {{-- <span id="fileName"><input type="text" class="border-0 bg-white"
+                                                <div class=" upload-profile-icon">
+                                                    {{-- <span id="fileName"><input type="text" class="border-0 bg-white"
                                                         disabled placeholder="No file choose"> </span> --}}
-                                                <label class="">
-                                                    <img src="{{asset('img/new-icons/upload.png')}}" alt="">
-                                                    <input type="file" name="file" class="InputFile" id="myFile"
-                                                        onchange="document.getElementById('ImagePreview').src = window.URL.createObjectURL(this.files[0])">
-                                                </label>
-        
+                                                    <label class="">
+                                                        <img src="{{ asset('img/new-icons/upload.png') }}" alt="">
+                                                        <input type="file" name="image" class="InputFile"
+                                                            id="myFile"
+                                                            onchange="document.getElementById('ImagePreview').src = window.URL.createObjectURL(this.files[0])">
+                                                    </label>
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-              
-                        <div class="checkout-form personal-address add-course-info ">
-                            <div class="personal-info-head">
-                                <h4>Personal Details</h4>
-                                <p>Edit your personal information and address.</p>
-                            </div>
-                            <form action="#">
+
+                            <div class="checkout-form personal-address add-course-info ">
+                                <div class="personal-info-head">
+                                    <h4>Personal Details</h4>
+                                    {{-- <p>Edit your personal information and address.</p> --}}
+                                </div>
+
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">First Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter your first Name">
+                                            <input type="text" class="form-control" placeholder="Enter your first Name"
+                                                name="f_name" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Last Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter your last Name">
+                                            <input type="text" class="form-control" placeholder="Enter your last Name"
+                                                name="l_name">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Phone</label>
-                                            <input type="text" class="form-control" placeholder="Enter your Phone">
+                                            <input type="text" class="form-control" placeholder="Enter your Phone"
+                                                name="phone">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Email</label>
-                                            <input type="text" class="form-control" placeholder="Enter your Email">
+                                            <input type="text" class="form-control" placeholder="Enter your Email"
+                                                name="email" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Birthday</label>
-                                            <input type="text" class="form-control" placeholder="Birth of Date">
+                                            <input type="date" class="form-control" placeholder="Birth of Date"
+                                                name="b_day">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Country</label>
                                             <select class="form-select select country-select select2-hidden-accessible"
-                                                name="sellist1" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                                name="country" data-select2-id="1" tabindex="-1" aria-hidden="true">
                                                 <option data-select2-id="3">Select country</option>
-                                                <option>India</option>
-                                                <option>America</option>
-                                                <option>London</option>
+                                                @foreach ($countries as $country)
+                                                    <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Address Line 1</label>
-                                            <input type="text" class="form-control" placeholder="Address">
+                                            <input type="text" class="form-control" placeholder="Address Line 1"
+                                                name="address_1">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Address Line 2 (Optional)</label>
-                                            <input type="text" class="form-control" placeholder="Address">
+                                            <input type="text" class="form-control" placeholder="Address Line 2"
+                                                name="address_2">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">City</label>
-                                            <input type="text" class="form-control" placeholder="Enter your City">
+                                            <input type="text" class="form-control" placeholder="Enter your City"
+                                                name="city">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">ZipCode</label>
-                                            <input type="text" class="form-control" placeholder="Enter your Zipcode">
+                                            <input type="text" class="form-control" placeholder="Enter your Zipcode"
+                                                name="zipcode">
                                         </div>
                                     </div>
-                                   
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Password</label>
+                                            <input type="password" class="form-control" placeholder="Enter password"
+                                                name="password">
+                                        </div>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+            </form>
 
         </div>
     </div>

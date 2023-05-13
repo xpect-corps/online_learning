@@ -41,12 +41,14 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
         Route::get('/category/create', [CategoryController::class, 'create'])->name('admin.category.create');
         Route::post('/category/store', [CategoryController::class, 'store'])->name('admin.category.store');
         Route::get('/category/edit/{id}', [CategoryController::class, 'edit'])->name('admin.category.edit');
-        Route::post('/category/update/{id}', [CategoryController::class, 'update'])->name('admin.category.update');
+        Route::post('/category/update ', [CategoryController::class, 'update'])->name('admin.category.update');
 
         // tutor
-        Route::get('/tutor', [TutorController::class, 'index']);
-        Route::get('/tutorcreate', [TutorController::class, 'create']);
-        Route::get('/tutorshow', [TutorController::class, 'show']);
+        Route::get('/tutor', [TutorController::class, 'index'])->name('admin.tutor');
+        Route::get('/tutor/create', [TutorController::class, 'create'])->name('admin.tutor.create');
+        Route::post('/tutor/store', [TutorController::class, 'store'])->name('admin.tutor.store');
+        Route::get('/tutor/show/{id}', [TutorController::class, 'show'])->name('admin.tutor.show');
+        Route::post('/tutor/update', [TutorController::class, 'update'])->name('admin.tutor.update');
 
         // payments
         Route::get('/payment', [PaymentController::class, 'index']);
@@ -54,10 +56,10 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 });
 
 
-// manager Routes
-Route::middleware(['auth', 'user-access:manager'])->group(function () {
+// tutor Routes
+Route::middleware(['auth', 'user-access:tutor'])->group(function () {
 
-    Route::get('/manager/home', [ManagerControllerr::class, 'managerHome'])->name('manager.home');
+    // Route::get('/tutor/home', [TutorController::class, 'tutorHome'])->name('tutor.home');
 });
 
 
