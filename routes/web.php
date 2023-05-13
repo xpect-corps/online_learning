@@ -33,8 +33,10 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
         Route::get('/notification', [NotificationController::class, 'index']);
 
         // student
-        Route::get('/students', [StudentController::class, 'index']);
-        Route::get('/studentsView', [StudentController::class, 'show']);
+        Route::get('/students', [StudentController::class, 'index'])->name('admin.student');
+        Route::get('/student/create', [StudentController::class, 'create'])->name('admin.student.create');
+        Route::post('/student/store', [StudentController::class, 'store'])->name('admin.student.store');
+        Route::get('/students/view/{id}', [StudentController::class, 'show'])->name('admin.student.show');
 
         // category
         Route::get('/Category', [CategoryController::class, 'index'])->name('admin.category');

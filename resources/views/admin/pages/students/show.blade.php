@@ -15,16 +15,16 @@
                             <div class="profile-bg">
                                 <img src="{{ asset('img/profile-bg.jpg') }}" alt="">
                                 <div class="profile-img">
-                                    <a href="student-profile.html"><img alt=""
-                                            src="{{ asset('img/students/student-01.jpg') }}"></a>
+                                    <a href="#"><img alt=""
+                                            src="{{ asset('/images/student/'.$student->image) }}"></a>
                                 </div>
                             </div>
                             <div class="profile-group">
                                 <div class="profile-name text-center">
-                                    <h4><a href="student-profile.html">Rolands R</a></h4>
-                                    <p class="mb-1">jennywilson@example.com
+                                    <h4><a href="student-profile.html">{{ $student->user->name }}</a></h4>
+                                    <p class="mb-1">{{ $student->email }}
                                     </p>
-                                    <p class="mb-1">+1(452) 125-6789
+                                    <p class="mb-1">{{ $student->mobile_no }}
                                     </p>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-body overview-sec-body bg-white">
+                    {{-- <div class="card-body overview-sec-body bg-white">
                         <h5 class="subs-title">Professional Skills</h5>
                         <div class="sidebar-tag-labels">
                         <ul class="list-unstyled">
@@ -55,9 +55,9 @@
                         <li><a href="javascript:;">Mobile App Design</a></li>
                         </ul>
                         </div>
-                        </div>
+                        </div> --}}
                 </div>
-             
+
             </div>
 
 
@@ -74,24 +74,23 @@
                                         <div class="student-img">
                                             <a href="student-profile.html">
                                                 <img class="w-100" alt=""
-                                                src="{{ asset('img/course/course-01.jpg') }}">
+                                                    src="{{ asset('img/course/course-01.jpg') }}">
                                             </a>
                                         </div>
                                         <div class="student-content pb-0">
                                             <h5><a href="course-details.html">Information About UI/UX Design
-                                                Degree</a></h5>
-                                                <div class="rating-img d-flex align-items-center mb-2">
-                                                    <img src="{{ asset('img/icon/icon-01.svg') }}"
-                                                        alt="">
-                                                    <p>12+ Lesson</p>
-                                                </div>
-                                                <div class="course-view d-flex align-items-center mb-3">
-                                                    <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
-                                                    <p>9hr 30min</p>
-                                                </div>
-                                                <div class="remove-btn">
-                                                    <a href="javascript:;" class="btn">Remove</a>
-                                                </div>
+                                                    Degree</a></h5>
+                                            <div class="rating-img d-flex align-items-center mb-2">
+                                                <img src="{{ asset('img/icon/icon-01.svg') }}" alt="">
+                                                <p>12+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center mb-3">
+                                                <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
+                                                <p>9hr 30min</p>
+                                            </div>
+                                            <div class="remove-btn">
+                                                <a href="javascript:;" class="btn">Remove</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -100,24 +99,23 @@
                                         <div class="student-img">
                                             <a href="student-profile.html">
                                                 <img class="w-100" alt=""
-                                                src="{{ asset('img/course/course-01.jpg') }}">
+                                                    src="{{ asset('img/course/course-01.jpg') }}">
                                             </a>
                                         </div>
                                         <div class="student-content pb-0">
                                             <h5><a href="course-details.html">Information About UI/UX Design
-                                                Degree</a></h5>
-                                                <div class="rating-img d-flex align-items-center mb-2">
-                                                    <img src="{{ asset('img/icon/icon-01.svg') }}"
-                                                        alt="">
-                                                    <p>12+ Lesson</p>
-                                                </div>
-                                                <div class="course-view d-flex align-items-center mb-3">
-                                                    <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
-                                                    <p>9hr 30min</p>
-                                                </div>
-                                                <div class="remove-btn">
-                                                    <a href="javascript:;" class="btn">Remove</a>
-                                                </div>
+                                                    Degree</a></h5>
+                                            <div class="rating-img d-flex align-items-center mb-2">
+                                                <img src="{{ asset('img/icon/icon-01.svg') }}" alt="">
+                                                <p>12+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center mb-3">
+                                                <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
+                                                <p>9hr 30min</p>
+                                            </div>
+                                            <div class="remove-btn">
+                                                <a href="javascript:;" class="btn">Remove</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -126,24 +124,23 @@
                                         <div class="student-img">
                                             <a href="student-profile.html">
                                                 <img class="w-100" alt=""
-                                                src="{{ asset('img/course/course-01.jpg') }}">
+                                                    src="{{ asset('img/course/course-01.jpg') }}">
                                             </a>
                                         </div>
                                         <div class="student-content pb-0">
                                             <h5><a href="course-details.html">Information About UI/UX Design
-                                                Degree</a></h5>
-                                                <div class="rating-img d-flex align-items-center mb-2">
-                                                    <img src="{{ asset('img/icon/icon-01.svg') }}"
-                                                        alt="">
-                                                    <p>12+ Lesson</p>
-                                                </div>
-                                                <div class="course-view d-flex align-items-center mb-3">
-                                                    <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
-                                                    <p>9hr 30min</p>
-                                                </div>
-                                                <div class="remove-btn">
-                                                    <a href="javascript:;" class="btn">Remove</a>
-                                                </div>
+                                                    Degree</a></h5>
+                                            <div class="rating-img d-flex align-items-center mb-2">
+                                                <img src="{{ asset('img/icon/icon-01.svg') }}" alt="">
+                                                <p>12+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center mb-3">
+                                                <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
+                                                <p>9hr 30min</p>
+                                            </div>
+                                            <div class="remove-btn">
+                                                <a href="javascript:;" class="btn">Remove</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -164,24 +161,23 @@
                                         <div class="student-img">
                                             <a href="student-profile.html">
                                                 <img class="w-100" alt=""
-                                                src="{{ asset('img/course/course-01.jpg') }}">
+                                                    src="{{ asset('img/course/course-01.jpg') }}">
                                             </a>
                                         </div>
                                         <div class="student-content pb-0">
                                             <h5><a href="course-details.html">Information About UI/UX Design
-                                                Degree</a></h5>
-                                                <div class="rating-img d-flex align-items-center mb-2">
-                                                    <img src="{{ asset('img/icon/icon-01.svg') }}"
-                                                        alt="">
-                                                    <p>12+ Lesson</p>
-                                                </div>
-                                                <div class="course-view d-flex align-items-center mb-3">
-                                                    <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
-                                                    <p>9hr 30min</p>
-                                                </div>
-                                                <div class="remove-btn">
-                                                    <a href="javascript:;" class="btn">Remove</a>
-                                                </div>
+                                                    Degree</a></h5>
+                                            <div class="rating-img d-flex align-items-center mb-2">
+                                                <img src="{{ asset('img/icon/icon-01.svg') }}" alt="">
+                                                <p>12+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center mb-3">
+                                                <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
+                                                <p>9hr 30min</p>
+                                            </div>
+                                            <div class="remove-btn">
+                                                <a href="javascript:;" class="btn">Remove</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -190,24 +186,23 @@
                                         <div class="student-img">
                                             <a href="student-profile.html">
                                                 <img class="w-100" alt=""
-                                                src="{{ asset('img/course/course-01.jpg') }}">
+                                                    src="{{ asset('img/course/course-01.jpg') }}">
                                             </a>
                                         </div>
                                         <div class="student-content pb-0">
                                             <h5><a href="course-details.html">Information About UI/UX Design
-                                                Degree</a></h5>
-                                                <div class="rating-img d-flex align-items-center mb-2">
-                                                    <img src="{{ asset('img/icon/icon-01.svg') }}"
-                                                        alt="">
-                                                    <p>12+ Lesson</p>
-                                                </div>
-                                                <div class="course-view d-flex align-items-center mb-3">
-                                                    <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
-                                                    <p>9hr 30min</p>
-                                                </div>
-                                                <div class="remove-btn">
-                                                    <a href="javascript:;" class="btn">Remove</a>
-                                                </div>
+                                                    Degree</a></h5>
+                                            <div class="rating-img d-flex align-items-center mb-2">
+                                                <img src="{{ asset('img/icon/icon-01.svg') }}" alt="">
+                                                <p>12+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center mb-3">
+                                                <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
+                                                <p>9hr 30min</p>
+                                            </div>
+                                            <div class="remove-btn">
+                                                <a href="javascript:;" class="btn">Remove</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -216,24 +211,23 @@
                                         <div class="student-img">
                                             <a href="student-profile.html">
                                                 <img class="w-100" alt=""
-                                                src="{{ asset('img/course/course-01.jpg') }}">
+                                                    src="{{ asset('img/course/course-01.jpg') }}">
                                             </a>
                                         </div>
                                         <div class="student-content pb-0">
                                             <h5><a href="course-details.html">Information About UI/UX Design
-                                                Degree</a></h5>
-                                                <div class="rating-img d-flex align-items-center mb-2">
-                                                    <img src="{{ asset('img/icon/icon-01.svg') }}"
-                                                        alt="">
-                                                    <p>12+ Lesson</p>
-                                                </div>
-                                                <div class="course-view d-flex align-items-center mb-3">
-                                                    <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
-                                                    <p>9hr 30min</p>
-                                                </div>
-                                                <div class="remove-btn">
-                                                    <a href="javascript:;" class="btn">Remove</a>
-                                                </div>
+                                                    Degree</a></h5>
+                                            <div class="rating-img d-flex align-items-center mb-2">
+                                                <img src="{{ asset('img/icon/icon-01.svg') }}" alt="">
+                                                <p>12+ Lesson</p>
+                                            </div>
+                                            <div class="course-view d-flex align-items-center mb-3">
+                                                <img src="http://127.0.0.1:8000/img/icon/icon-02.svg" alt="">
+                                                <p>9hr 30min</p>
+                                            </div>
+                                            <div class="remove-btn">
+                                                <a href="javascript:;" class="btn">Remove</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -46,6 +46,7 @@ class TutorController extends Controller
         $user = new User();
         $user->name = $request->f_name ;
         $user->email = $request->email;
+        $user->mobile_no = $request->phone;
         $user->password = Hash::make($request->password);
         $user->save();
 
