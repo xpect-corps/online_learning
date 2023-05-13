@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome/css/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome/css/all.min.css')}}">
-
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/feather.css')}}">
     <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
     <link rel="stylesheet" href="{{asset('plugins/select2/css/select2.min.css')}}" />
@@ -57,6 +57,7 @@
     <script src="{{ asset('plugins/apexchart/chart-data.js')}}"></script>
 
     <script src="{{ asset('js/script.js')}}"></script>
+    <script src="{{asset('js/owl.carousel.min.js')}}"></script>
 </body>
 
 <!-- Mirrored from dreamslms.dreamguystech.com/html/instructor-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Apr 2023 11:13:11 GMT -->

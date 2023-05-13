@@ -1,7 +1,7 @@
 @extends('admin.layouts.admin_app')
 
 @section('content')
-<div class="container" style="transform: none;">
+<div class="container-fluid" style="transform: none;">
     <div class="row" style="transform: none;">
 
         <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
