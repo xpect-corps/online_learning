@@ -249,7 +249,7 @@
                                     class="sell-course-head comman-space d-flex justify-content-between align-items-center">
                                     <h3>Courses</h3>
                                     <div class="go-dashboard text-center">
-                                        <a href="{{ url('/admin/newcourse') }}" class="btn btn-primary">Create New
+                                        <a href="{{ url('/admin/course/create') }}" class="btn btn-primary">Create New
                                             Course</a>
                                     </div>
                                 </div>
@@ -309,38 +309,47 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="sell-table-group d-flex align-items-center">
-                                                            <div class="sell-group-img">
-                                                                <a href="course-details.html">
-                                                                    <img src="{{ asset('img/course/course-10.jpg') }}"
-                                                                        class="img-fluid " alt="">
-                                                                </a>
-                                                            </div>
-                                                            <div class="sell-tabel-info">
-                                                                <p><a href="course-details.html">Information About UI/UX
-                                                                        Design Degree</a></p>
-                                                                <div
-                                                                    class="course-info d-flex align-items-center border-bottom-0 pb-0">
-                                                                    <div class="rating-img d-flex align-items-center">
-                                                                        <img src="{{ asset('img/icon/icon-01.svg') }}"
-                                                                            alt="">
-                                                                        <p>10+ Lesson</p>
-                                                                    </div>
-                                                                    <div class="course-view d-flex align-items-center">
-                                                                        <img src="{{ asset('img/icon/timer-start.svg') }}"
-                                                                            alt="">
-                                                                        <p>7hr 20min</p>
+                                                @foreach ($courses as $course)
+                                                    <tr>
+                                                        <td>
+                                                            <div class="sell-table-group d-flex align-items-center">
+                                                                <div class="sell-group-img">
+                                                                    <a href="course-details.html">
+                                                                        <img src="{{ asset('images/course/cover_image/' . $course->cover_photo) }}"
+                                                                            class="img-fluid " alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="sell-tabel-info">
+                                                                    <p><a
+                                                                            href="course-details.html">{{ $course->title }}</a>
+                                                                    </p>
+                                                                    <div
+                                                                        class="course-info d-flex align-items-center border-bottom-0 pb-0">
+                                                                        <div class="rating-img d-flex align-items-center">
+                                                                            <img src="{{ asset('img/icon/icon-01.svg') }}"
+                                                                                alt="">
+                                                                            <p>10+ Lesson</p>
+                                                                        </div>
+                                                                        <div class="course-view d-flex align-items-center">
+                                                                            <img src="{{ asset('img/icon/timer-start.svg') }}"
+                                                                                alt="">
+                                                                            <p>7hr 20min</p>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>3200</td>
-                                                    <td><span class="badge info-low">Live</span></td>
+                                                        </td>
+                                                        <td>3200</td>
+                                                        <td>
+                                                            @if ($course->status == 1)
+                                                                <span class="badge info-low">Live</span>
+                                                        </td>
+                                                    @else
+                                                        <span class="badge info-inter">Darft</span>
+                                                @endif
                                                 </tr>
-                                                <tr>
+                                                @endforeach
+                                                {{-- <tr>
                                                     <td>
                                                         <div class="sell-table-group d-flex align-items-center">
                                                             <div class="sell-group-img">
@@ -406,8 +415,7 @@
                                                     </td>
                                                     <td>1500</td>
                                                     <td><span class="badge info-low">Live</span></td>
-                                                </tr>
-
+                                                </tr> --}}
                                             </tbody>
                                         </table>
 

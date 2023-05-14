@@ -28,6 +28,8 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
         // course
         Route::get('/course', [CourseController::class, 'index'])->name('admin.course');
         Route::get('/course/create', [CourseController::class, 'create'])->name('admin.course.create');
+        Route::post('/course/store', [CourseController::class, 'store'])->name('admin.course.store');
+
 
         // notification
         Route::get('/notification', [NotificationController::class, 'index']);
