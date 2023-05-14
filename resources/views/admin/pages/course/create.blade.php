@@ -9,7 +9,7 @@
                     <div class="add-course-btns">
                         <ul class="nav">
                             <li>
-                                <a href="{{url('/admin/course')}}" class="btn btn-black">Back to Course</a>
+                                <a href="{{ url('/admin/course') }}" class="btn btn-black">Back to Course</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);" class="btn btn-success-dark">Save</a>
@@ -31,59 +31,61 @@
                                 <li>
                                     <p><span></span> Courses Media</p>
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <p><span></span> Curriculum</p>
-                                </li>
+                                </li> --}}
                                 <li>
                                     <p><span></span> Settings</p>
                                 </li>
                             </ul>
                         </div>
-                        <div class="widget-content multistep-form">
-                            <fieldset id="first">
-                                <div class="add-course-info">
-                                    <div class="add-course-inner-header">
-                                        <h4>Basic Information</h4>
-                                    </div>
-                                    <div class="add-course-form">
-                                        <form action="#">
+                        <form action="{{ route('admin.course.store') }}" method="POST" enctype="multipart/form-data"> 
+                            @csrf
+                            <div class="widget-content multistep-form">
+                                <fieldset id="first">
+                                    <div class="add-course-info">
+                                        <div class="add-course-inner-header">
+                                            <h4>Basic Information</h4>
+                                        </div>
+                                        <div class="add-course-form">
+                                            {{-- <form action="#"> --}}
                                             <div class="form-group">
                                                 <label class="add-course-label">Title</label>
-                                                <input type="text" class="form-control" placeholder="Course Title" />
+                                                <input type="text" class="form-control" placeholder="Course Title"
+                                                    name="title" />
                                             </div>
-                                            <div class="form-group">
+                                            {{-- <div class="form-group">
                                                 <label class="add-course-label">Tutor</label>
                                                 <input type="text" class="form-control" placeholder="Course Title" />
-                                            </div>
+                                            </div> --}}
                                             <div class="form-group">
                                                 <label class="add-course-label">Courses Category</label>
-                                                <select class="form-control select">
-                                                    <option>Category 01</option>
-                                                    <option>Category 02</option>
-                                                    <option>Category 03</option>
-                                                    <option>Category 04</option>
+                                                <select class="form-control select" name="category_id">
+                                                    @foreach ($categories as $category)
+                                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                                    @endforeach
                                                 </select>
                                             </div>
                                             <div class="form-group mb-0">
                                                 <label class="add-course-label">Course Description</label>
-                                                <div id="editor"></div>
+                                                <input id="editor" name="description">
                                             </div>
 
-                                        </form>
+                                            {{-- </form> --}}
+                                        </div>
+                                        <div class="widget-btn">
+                                            <a class="btn btn-black">Back</a>
+                                            <a class="btn btn-info-light next_btn">Continue</a>
+                                        </div>
                                     </div>
-                                    <div class="widget-btn">
-                                        <a class="btn btn-black">Back</a>
-                                        <a class="btn btn-info-light next_btn">Continue</a>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset class="field-card">
-                                <div class="add-course-info">
-                                    <div class="add-course-inner-header">
-                                        <h4>Courses Media</h4>
-                                    </div>
-                                    <div class="add-course-form">
-                                        <form action="#">
+                                </fieldset>
+                                <fieldset class="field-card">
+                                    <div class="add-course-info">
+                                        <div class="add-course-inner-header">
+                                            <h4>Courses Media</h4>
+                                        </div>
+                                        <div class="add-course-form">
+                                            {{-- <form action="#"> --}}
                                             <div class="form-group">
                                                 <label class="add-course-label">Course cover image</label>
 
@@ -92,7 +94,7 @@
                                                             disabled placeholder="No file choose"> </span>
                                                     <label class="relative-file-upload">
                                                         Upload Image
-                                                        <input type="file" name="file" class="InputFile"
+                                                        <input type="file" name="cover_image" class="InputFile"
                                                             id="myFile"
                                                             onchange="document.getElementById('ImagePreview').src = window.URL.createObjectURL(this.files[0])">
                                                     </label>
@@ -110,7 +112,7 @@
 
                                             </div>
 
-                                            <input type="file" accept="video/*" id="input-tag" />
+                                            <input type="file" accept="video/*" id="input-tag" name="video_file" />
                                             <hr>
                                             <div class="video-div">
                                                 <video controls id="video-tag" class="w-100">
@@ -130,15 +132,15 @@
                                                     </a>
                                                 </div>
                                             </div> --}}
-                                        </form>
+                                            {{-- </form> --}}
+                                        </div>
+                                        <div class="widget-btn">
+                                            <a class="btn btn-black prev_btn">Previous</a>
+                                            <a class="btn btn-info-light next_btn">Continue</a>
+                                        </div>
                                     </div>
-                                    <div class="widget-btn">
-                                        <a class="btn btn-black prev_btn">Previous</a>
-                                        <a class="btn btn-info-light next_btn">Continue</a>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset class="field-card">
+                                </fieldset>
+                                {{-- <fieldset class="field-card">
                                 <div class="add-course-info">
                                     <div class="add-course-inner-header">
                                         <h4>Curriculum</h4>
@@ -241,7 +243,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="curriculum-grid mb-0">
+                                        {{-- <div class="curriculum-grid mb-0">
                                             <div class="curriculum-head">
                                                 <p>Section 1: JavaScript Beginnings</p>
                                                 <a href="javascript:void(0);" class="btn">Add Lecture</a>
@@ -362,39 +364,39 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}
                                     </div>
                                     <div class="widget-btn">
                                         <a class="btn btn-black prev_btn">Previous</a>
                                         <a class="btn btn-info-light next_btn">Continue</a>
                                     </div>
                                 </div>
-                            </fieldset>
-                            <fieldset class="field-card">
-                                <div class="add-course-info">
-                                    <div class="add-course-inner-header">
-                                        <h4>Requirements</h4>
-                                    </div>
-                                    <div class="add-course-form">
-                                        <form action="#">
+                            </fieldset> --}}
+                                <fieldset class="field-card">
+                                    <div class="add-course-info">
+                                        <div class="add-course-inner-header">
+                                            <h4>Requirements</h4>
+                                        </div>
+                                        <div class="add-course-form">
+                                            {{-- <form action="#"> --}}
                                             <div class="form-group form-group-tagsinput">
-                                                <input type="text" data-role="tagsinput"
-                                                    class="input-tags form-control" name="html"
-                                                    value="jquery, bootstrap" id="html" />
+                                                <input type="text" data-role="tagsinput" class="input-tags form-control"
+                                                    name="tags[]" value="" id="html" />
                                             </div>
                                             <div class="form-group mb-0">
                                                 <label class="add-course-label">Price</label>
-                                                <input type="text" class="form-control" placeholder="10.00" />
+                                                <input type="text" class="form-control" placeholder="10.00"
+                                                    name="price" />
                                             </div>
-                                        </form>
+                                            {{-- </form> --}}
+                                        </div>
+                                        <div class="widget-btn">
+                                            <a class="btn btn-black prev_btn">Previous</a>
+                                            <button type="submit" class="btn btn-info-light">Submit</button>
+                                        </div>
                                     </div>
-                                    <div class="widget-btn">
-                                        <a class="btn btn-black prev_btn">Previous</a>
-                                        <a class="btn btn-info-light next_btn">Continue</a>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset class="field-card">
+                                </fieldset>
+                                {{-- <fieldset class="field-card">
                                 <div class="add-course-info">
                                     <div class="add-course-msg">
                                         <i class="fas fa-circle-check"></i>
@@ -402,8 +404,9 @@
                                         <p>Admin will be Approve soon.</p>
                                     </div>
                                 </div>
-                            </fieldset>
-                        </div>
+                            </fieldset> --}}
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

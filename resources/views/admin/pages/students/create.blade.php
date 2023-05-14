@@ -80,16 +80,16 @@
                     </div>
                 </div>
             </div> --}}
-            <form action="{{ route('admin.tutor.store') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('admin.student.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="add-course-header pb-0">
-                            <h2>Add New Tutor</h2>
+                            <h2>Add New Student</h2>
                             <div class="add-course-btns">
                                 <ul class="nav"> 
                                     <li>
-                                        <a href="{{ route('admin.tutor') }}" class="btn btn-black">Back to Tutor</a>
+                                        <a href="{{ route('admin.student') }}" class="btn btn-black">Back to Students</a>
                                     </li>
                                     <li>
                                         <button type="submit" class="btn btn-success-dark">Save</button>
@@ -169,18 +169,18 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">First Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter your first Name"
-                                                name="f_name" required>
+                                            <label class="form-control-label">Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter Name"
+                                                name="name" required>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    {{-- <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Last Name</label>
                                             <input type="text" class="form-control" placeholder="Enter your last Name"
                                                 name="l_name">
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Phone</label>

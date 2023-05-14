@@ -20,16 +20,18 @@
                                     <img src="http://127.0.0.1:8000/img/profile-bg.jpg" alt="">
                                     <div class="profile-img">
                                         <a href="{{ url('admin/tutorshow') }}">
-                                            <img class="img-fluid" alt="" src="{{ asset('img/user/user11.jpg') }}">
+                                            <img class="img-fluid" alt=""
+                                                src="{{ asset('/images/tutor/' . $tutor->image) }}">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="profile-group">
                                     <div class="profile-name text-center">
-                                        <h4><a href="student-profile.html">Rolands R</a></h4>
-                                        <p class="mb-1">jennywilson@example.com
+                                        <h4><a href="student-profile.html">{{ $tutor->first_name }}
+                                                {{ $tutor->last_name }}</a></h4>
+                                        <p class="mb-1">{{ $tutor->email }}
                                         </p>
-                                        <p class="mb-1">+1(452) 125-6789
+                                        <p class="mb-1">{{ $tutor->mobile_no }}
                                         </p>
                                     </div>
                                 </div>
@@ -85,11 +87,11 @@
             <div class="col-xl-9 col-md-8">
                 <div class="settings-widget profile-details">
                     <div class="settings-menu p-0">
-                        <div class="profile-heading">
+                        {{-- <div class="profile-heading">
                             <h3>Profile Details</h3>
                             <p>You have full control to manage your own account setting.</p>
-                        </div>
-                        <div class="course-group mb-0 d-flex">
+                        </div> --}}
+                        {{-- <div class="course-group mb-0 d-flex">
                             <div class="course-group-img d-flex align-items-center">
                                 <a href="student-profile.html"><img src="assets/img/user/user11.jpg" alt=""
                                         class="img-fluid"></a>
@@ -102,82 +104,102 @@
                                 <a href="javascript:;" class="btn btn-success">Update</a>
                                 <a href="javascript:;" class="btn btn-danger">Delete</a>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="checkout-form personal-address add-course-info ">
                             <div class="personal-info-head">
                                 <h4>Personal Details</h4>
-                                <p>Edit your personal information and address.</p>
+                                {{-- <p>Edit your personal information and address.</p> --}}
                             </div>
-                            <form action="#">
+                            <form action="{{ route('admin.tutor.update') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 <div class="row">
+                                    <input type="hidden" name="user_id" value="{{ $tutor->user_id }}">
+                                    <input type="hidden" name="tutor_id" value="{{ $tutor->id }}">
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">First Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter your first Name">
+                                            <input type="text" class="form-control" placeholder="Enter your first Name"
+                                                name="f_name" value="{{ $tutor->first_name }}">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Last Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter your last Name">
+                                            <input type="text" class="form-control" placeholder="Enter your last Name"
+                                                name="l_name" value="{{ $tutor->last_name }}">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Phone</label>
-                                            <input type="text" class="form-control" placeholder="Enter your Phone">
+                                            <input type="text" class="form-control" placeholder="Enter your Phone"
+                                                name="phone" value="{{ $tutor->mobile_no }}">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Email</label>
-                                            <input type="text" class="form-control" placeholder="Enter your Email">
+                                            <input type="text" class="form-control" placeholder="Enter your Email"
+                                                name="email" value="{{ $tutor->email }}">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Birthday</label>
-                                            <input type="text" class="form-control" placeholder="Birth of Date">
+                                            <input type="text" class="form-control" placeholder="Birth of Date"
+                                                name="b_day" value="{{ $tutor->dob }}">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Country</label>
                                             <select class="form-select select country-select select2-hidden-accessible"
-                                                name="sellist1" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                                name="country" data-select2-id="1" tabindex="-1" aria-hidden="true">
                                                 <option data-select2-id="3">Select country</option>
-                                                <option>India</option>
-                                                <option>America</option>
-                                                <option>London</option>
+                                                @foreach ($countries as $country)
+                                                    <option value="{{ $country->id }}"
+                                                        @if ($tutor->country_id == $country->id) selected @endif>
+                                                        {{ $country->name }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Address Line 1</label>
-                                            <input type="text" class="form-control" placeholder="Address">
+                                            <input type="text" class="form-control" placeholder="Address Line 1"
+                                                value="{{ $tutor->address_1 }}" name="address_1">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Address Line 2 (Optional)</label>
-                                            <input type="text" class="form-control" placeholder="Address">
+                                            <input type="text" class="form-control" placeholder="Address Line 2"
+                                                value="{{ $tutor->address_2 }}" name="address_2">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">City</label>
-                                            <input type="text" class="form-control" placeholder="Enter your City">
+                                            <input type="text" class="form-control" placeholder="Enter your City"
+                                                name="city" value="{{ $tutor->city }}">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">ZipCode</label>
-                                            <input type="text" class="form-control" placeholder="Enter your Zipcode">
+                                            <input type="text" class="form-control" placeholder="Enter your Zipcode"
+                                                name="zipcode" value="{{ $tutor->pincode }}">
                                         </div>
                                     </div>
-                                    <div class="update-profile">
-                                        <button type="button" class="btn btn-primary">Update Profile</button>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Image</label>
+                                            <input type="file" class="form-control" name="image">
+                                        </div>
+                                    </div>
+                                    <div class="update-profile profile-share d-flex align-items-end justify-content-end">
+                                        <button type="submit" class="btn btn-success">Update Profile</button>
                                     </div>
                                 </div>
                             </form>
