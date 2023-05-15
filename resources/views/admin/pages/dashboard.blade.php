@@ -1,7 +1,7 @@
 @extends('admin.layouts.admin_app')
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
 
             <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
