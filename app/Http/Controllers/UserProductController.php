@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class UserProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('user.pages.home');
+        //
     }
 
     /**
@@ -21,9 +21,9 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function profile()
+    public function create()
     {
-        return view('user.pages.user.profile');
+        //
     }
 
     /**
@@ -32,9 +32,9 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function checkout()
     {
-        //
+        return view('user.pages.product.checkout');
     }
 
     /**
@@ -43,9 +43,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        return view('user.pages.product.productShow');
     }
 
     /**
@@ -77,8 +77,8 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function cart()
     {
-        //
+        return view('user.pages.product.cart');
     }
 }

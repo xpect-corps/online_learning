@@ -1,34 +1,76 @@
 <!DOCTYPE html>
-<html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
+<html lang="en">
+
+<!-- Mirrored from dreamslms.dreamguystech.com/html/instructor-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Apr 2023 11:13:02 GMT -->
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Learning</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    {{-- <link rel="stylesheet" href="{{ asset('css/tailwind.output.css') }}" /> --}}
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <script src="{{ asset('js/init-alpine.js') }}"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer></script>
-    <script src="{{ asset('js/charts-lines.js') }}" defer></script>
-    <script src="{{ asset('js/charts-pie.js') }}" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Dreams LMS</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.svg') }}">
+
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
+
+    <link
+      rel="stylesheet"
+      href="{{asset('plugins/fontawesome/css/fontawesome.min.css')}}"
+    />
+    <link rel="stylesheet" href="{{asset('plugins/fontawesome/css/all.min.css')}}" />
+
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}" />
+
+    <link rel="stylesheet" href="{{asset('plugins/slick/slick.css')}}" />
+    <link rel="stylesheet" href="{{asset('plugins/slick/slick-theme.css')}}" />
+
+    <link rel="stylesheet" href="{{asset('plugins/select2/css/select2.min.css')}}" />
+
+    <link rel="stylesheet" href="{{asset('plugins/aos/aos.css')}}" />
+
+    <link rel="stylesheet" href="{{asset('css/feather.css')}}" />
+    <link rel="stylesheet" href="{{asset('plugins/swiper/css/swiper.min.css')}}" />
+
+    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/custom.css')}}" />
+
+
+
+
 </head>
 
-<body>
-    <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">
+<body class="home-five">
 
-        {{-- @include('user.layouts.components.sidebar') --}}
+    <div class="main-wrapper">
 
-        <div class="flex flex-col flex-1 w-full">
+        @include('user.layouts.components.header')
 
-            {{-- @include('user.layouts.components.header') --}}
-
-            <main class="h-full overflow-y-auto">
-                @yield('content')
-            </main>
+        <div class="page-content instructor-page-content p-0">
+            @yield('content')
         </div>
+        @include('user.layouts.components.footer')
+
     </div>
+ 
+<script src="{{asset('js/jquery-3.6.0.min.js')}}"></script>
+
+<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+
+<script src="{{asset('js/jquery.waypoints.js')}}"></script>
+<script src="{{asset('js/jquery.counterup.min.js')}}"></script>
+
+<script src="{{asset('plugins/select2/js/select2.min.js')}}"></script>
+
+<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+
+<script src="{{asset('plugins/slick/slick.js')}}"></script>
+
+<script src="{{asset('plugins/aos/aos.js')}}"></script>
+
+<script src="{{asset('js/script.js')}}"></script>
+<script src="{{asset('plugins/swiper/js/swiper.min.js')}}"></script>
 </body>
+
+<!-- Mirrored from dreamslms.dreamguystech.com/html/instructor-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Apr 2023 11:13:11 GMT -->
 
 </html>

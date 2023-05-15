@@ -27,12 +27,7 @@
  p{
     font-size: 14px;
 }
-.edu-wrap,
-.edu-detail
-{
-    text-align: center;
-    justify-content: center;
-}
+
 .video {
     display: block;
   }
@@ -65,4 +60,53 @@
   }
   .course-name{
     position: relative;
+  }
+
+  .header-nav{
+    background: #fff;
+    height: 83px !important;
+  }
+  .homeFourCourses{
+    padding: 40px 0 40px;
+    background-color: #e9effa;
+  }
+  .app-image {
+    width: 335px;
+    max-width: 100%;
+     position: absolute;
+   top: -113px;
+  }
+  .app-section{
+    background-color: #e9effa;
+    border-radius: 20px;
+    padding: 40px;
+   height: 250px;
+   display: grid;
+  }
+  .learn{
+    border-radius: 50px;
+    background-color: #2766cf;
+    border: 1px solid #2766cf;
+    padding: 10px 39px;
+  }
+  .learn:hover{
+    border-radius: 50px;
+    background-color: #2766cfe3;
+    border: 1px solid #2766cfe3;
+  }
+  .buynow{
+    color: #2766cf;
+    border-radius: 50px;
+    background-color: #cee0ff;
+    border: 1px solid #cee0ff;
+    padding: 10px 23px;
+    font-size: 10px;
+    width: 100px;
+    font-weight: 700;
+  }
+  .buynow:hover{
+    border-radius: 50px;
+    background-color: #2766cfe3;
+    border: 1px solid #2766cfe3;
+    color: #fff !important;
   }
