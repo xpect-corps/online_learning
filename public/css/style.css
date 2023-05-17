@@ -77,7 +77,7 @@ html {
 body {
 	background-color: #fff;
 	color: #22100D;
-    font-family: 'poppins', sans-serif;
+    /* font-family: 'poppins', sans-serif; */
 	font-size: 16px;
     height: 100%;
 	overflow-x: hidden;
@@ -92,7 +92,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-	color: #F66962;
+	color: #346fd2;
 }
 a:hover,
 a:active,
@@ -736,7 +736,10 @@ button.bg-danger:hover {
     transform-origin: left top 0;
 }
 .dropdown-item.active, .dropdown-item:active {
-    background-color: #f7f7f7;
+    background-color: #5897fb;
+}
+.dropdown-item.active, .i {
+    color: #ffffff;
 }
 .navbar-nav .open .dropdown-menu {
 	border: 0;
@@ -1376,7 +1379,7 @@ button.bg-danger:hover {
 	font-size: 14px;
 }
 .wish-content h6 a:hover {
-	color: #FF5364;
+	color: #346fd2;
 }
 .wish-content .media-body {
 	overflow: hidden;
@@ -1489,11 +1492,10 @@ button.bg-danger:hover {
     width: 31px;
 }
 .bar-icon span {
-    background-color: #f66962;
     display: block;
     float: left;
-    height: 3px;
-    margin-bottom: 7px;
+    height: 4px;
+    margin-top: 7px;
     width: 31px;
     border-radius: 2px;
 }
@@ -1866,8 +1868,8 @@ html.menu-opened body {
 	font-size: 14px;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #FFDEDA;
-	color:  #22100D;
+    background-color: #5897fb;
+	color:  #ffffff;
 	font-size: 14px;
 }
 .banner-content .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -1909,7 +1911,7 @@ html.menu-opened body {
 	letter-spacing: 0.9px;
 }
 .section-sub-head span {
-    color: #F66962;
+    color: #2766cf;
     font-size: 18px;
     font-weight: 700;
     padding-bottom: 18px;
@@ -2401,7 +2403,7 @@ box-shadow: 0px 4px 14px rgba(231, 231, 231, 0.25);
 }
 .price h3 {
 	font-size: 24px;
-	color: #F66962;
+	color: #2766cf;
 	font-weight: 700;
 	margin-bottom: 0;
 }
@@ -4664,11 +4666,12 @@ box-shadow: 0px 4px 14px rgba(231, 231, 231, 0.25);
 	color: #333;
 }
 .notifications .noti-content {
-    height: 300px;
+    height: auto;
     width: 420px;
     overflow-y: auto;
     padding-right: 0;
     position: relative;
+    max-height: 300px;
 }
 .notifications .noti-content::-webkit-scrollbar {
 	width: 6px;
@@ -4742,8 +4745,8 @@ box-shadow: 0px 4px 14px rgba(231, 231, 231, 0.25);
 	margin-bottom: 8px;
 }
 .notifications .notification-message .btn-accept {
-	background: #E95744;
-	border: 1px solid #E95744;
+	background: #2766cf;
+	border: 1px solid #2766cf;
 	color: #FFF;
 }
 .notifications .notification-message .btn-reject {
@@ -4790,11 +4793,12 @@ box-shadow: 0px 4px 14px rgba(231, 231, 231, 0.25);
 	margin-right: 15px;
 }
 .wish-content {
-    height: 350px;
+    height: auto;
     width: 415px;
     overflow-y: auto;
     position: relative;
     padding-right: 0;
+    max-height: 350px;
 }
 .wish-content::-webkit-scrollbar {
 	width: 6px;
@@ -4850,9 +4854,7 @@ box-shadow: 0px 4px 14px rgba(231, 231, 231, 0.25);
 	color: #000;
 	font-size: 14px;
 }
-.wish-content h6 a:hover {
-	color: #FF5364;
-}
+
 .wish-content .media-body {
 	overflow: hidden;
 }
@@ -4881,14 +4883,14 @@ box-shadow: 0px 4px 14px rgba(231, 231, 231, 0.25);
 }
 .remove-btn a {
 	background: #FFFFFF;
-	border: 1px solid #FF5364;
+	border: 1px solid #2766cf;
 	padding: 5px 10px;
 	border-radius: 0;
 	font-weight: 500;
 	font-size: 12px;
 }
 .remove-btn a:hover {
-	background: #FF5364;
+	background: #2766cf;
 	color: #FFF;
 }
 .total-item {
@@ -8307,12 +8309,12 @@ textarea:focus {
     color: #000000;
 }
 .home-five .select2-dropdown {
-    border: 1px solid #FFD600;
+    /* border: 1px solid #FFD600; */
 }
 .home-five .select2-container--default 
 .select2-results__option--highlighted[aria-selected] {
-    background-color: #FFD600;
-    color: #000000;
+    /* background-color: #FFD600; */
+    /* color: #000000; */
     font-size: 14px;
 }
 .banner-content-five .sub-btn {
@@ -12203,7 +12205,7 @@ input[type=password]::-ms-clear
 	padding: 12px;
 }
 .course-design .price h3 {
-    font-size: 20px;
+    font-size: 17px;
 }
 .price {
     min-width: 140px;
@@ -12791,7 +12793,7 @@ input[type=password]::-ms-clear
 }
 .inner-banner {
 	padding: 45px 0;
-	background: url("../img/inner-banner.jpg");
+	background: url("../img/create-account-office-dark.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -12803,7 +12805,7 @@ input[type=password]::-ms-clear
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.76);
+	background-color: rgb(12 18 29 / 70%);
 }
 .inner-banner .container {
 	position: relative;
@@ -13004,7 +13006,7 @@ input[type=password]::-ms-clear
 	padding: 30px 0 60px;
 }
 .instructor-page-content {
-	padding: 30px 0 30px;
+    padding: 80px 0 30px;
 }
 .cat-title {
 	margin-bottom: 15px;	
@@ -13908,6 +13910,7 @@ margin-bottom: 7px;
 .settings-inner-blk table tbody tr td {
 	padding: 1rem 0rem;
 	font-size: 15px;
+    font-weight:500;
 }
 .settings-invoice-blk table tbody tr td .invoice-no {
 	color: #F66962;
@@ -15075,7 +15078,7 @@ margin-bottom: 7px;
 	font-weight: 500;
 }
 .clear-filter {
-	margin-bottom: 43px;
+    margin-bottom: 21px;
     padding: 8px 0px;
 }
 .clear-filter h4 {
@@ -15102,11 +15105,11 @@ margin-bottom: 7px;
 	font-weight: 900;
 }
 .course-design .price .free-color {
-	color: #159F46;
+	color: #22100D;
 }
 .course-design .price {
     min-width: auto;
-	padding: 8px 15px;
+	padding: 5px 10px;
 	text-align:center;
 }
 .lms-page li .page-link {
@@ -16966,7 +16969,7 @@ margin-bottom: 7px;
     height: 20px;
     width: 20px;
     background-color: #fff;
-    border: 1px solid #2766cf14;
+    border:1px solid #2766cf40;;
     border-radius: 50%;
 }
 .wallet-method .custom_radio input {
@@ -18758,8 +18761,7 @@ margin-bottom: 7px;
 	}
     .master-five-vector {
         position: absolute;
-        left: 1rem;
-        top: 3rem;
+        left: 2rem;
     }
     
 }
@@ -19728,18 +19730,18 @@ margin-bottom: 7px;
         padding: 40px 0 40px;
     }
     .home-five .bar-icon span {
-        background-color: #ffffff;
+        background-color: #262323;
     }
     .home-five .menu-header {
         background-color: #2D0160;
         border-bottom: 1px solid #ffffff;
     }
     .home-five .main-nav > li {
-        border-bottom: 1px solid #ffffff;
+        /* border-bottom: 1px solid #ffffff; */
         margin-left: 0;
     }
     .home-five .main-menu-wrapper {
-        background-color: #2D0160;
+        /* background-color: #2D0160; */
     }
     .home-five .main-nav ul {
         background-color: #520aa5;
@@ -22337,7 +22339,7 @@ margin-bottom: 7px;
 		font-size: 12px;
 	}
 	.course-content {
-		padding: 40px 0px;
+        padding: 70px 0px;
 	}
 	.list-course .product {
 		display: block;
@@ -24539,7 +24541,7 @@ margin-bottom: 7px;
     .home-slide-five-text h1 {
         font-weight: 700;
         font-size: 25px;
-        color: #FFFFFF;
+        color: #22100D;
         margin-bottom: 25px;
     }
     .banner-content-five .form-inner-five {
@@ -25339,7 +25341,7 @@ margin-bottom: 7px;
     }
     .tablist-five .nav-tab.active {
         border-bottom: none;
-        padding-bottom: 5px;
+        padding: 11px;
         font-size: 14px;
     }
     .tablist-five {

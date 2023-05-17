@@ -1,7 +1,7 @@
 @extends('user.layouts.app')
 
 @section('content')
-    <div class="main-wrapper" style="padding-top: 93px;">
+    <div class="main-wrapper" style="padding-top: 73px;">
 
         <div class="inner-banner">
             <div class="container">

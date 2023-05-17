@@ -1,7 +1,7 @@
 @extends('user.layouts.app')
 
 @section('content')
-    <section class="course-content cart-widget" style="padding:112px 0">
+    <section class="course-content cart-widget mt-4" >
         <div class="container">
             <div class="student-widget">
                 <div class="student-widget-group">
@@ -16,7 +16,7 @@
                                         <div class="course-box course-design list-course d-flex">
                                             <div class="product">
                                                 <div class="product-img">
-                                                    <a href="course-details.html">
+                                                    <a href="{{url('/productShow')}}">
                                                         <img class="img-fluid" alt=""
                                                             src="{{asset('img/course/course-10.jpg')}}">
                                                     </a>
@@ -26,7 +26,7 @@
                                                 </div>
                                                 <div class="product-content">
                                                     <div class="head-course-title">
-                                                        <h3 class="title"><a href="{{url('/Course_view')}}">Information About
+                                                    <h3 class="title"><a href="{{url('/productShow')}}">Information About
                                                                 UI/UX Design Degree</a></h3>
                                                     </div>
                                                     <div class="course-info d-flex align-items-center border-bottom-0 pb-0">
@@ -50,8 +50,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="cart-remove">
-
-                                                    <a href="javascript:;" class=""><img src="{{asset('img/icon/cart.svg')}}" alt="img"></a>
+                                                    <div class="remove-btn">
+                                                        <a href="#" class="btn">Remove</a>
+                                                      </div>
+                                                    {{-- <a href="javascript:;" class=""><img src="{{asset('img/icon/cart.svg')}}" alt="img"></a> --}}
                                                 </div>
                                             </div>
                                         </div>

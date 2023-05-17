@@ -1,7 +1,7 @@
 @extends('user.layouts.app')
 
 @section('content')
-    <section class="course-content" style="transform: none;     padding: 120px 0px;">
+    <section class="course-content mt-4" style="transform: none;">
         <div class="container" style="transform: none;">
             <div class="row" style="transform: none;">
                 <div class="col-lg-3 theiaStickySidebar"
@@ -178,15 +178,25 @@
                             <div class="col-lg-6">
                                 <div class="show-filter add-course-info ">
                                     <form action="#">
-                                        <div class="row  align-items-center">
-                                            <div class=" col-item">
+                                        <div class="row gx-2 align-items-center">
+                                            <div class="col-md-6 col-item">
                                                 <div class=" search-group">
                                                     <i class="feather-search"></i>
                                                     <input type="text" class="form-control"
                                                         placeholder="Search our courses">
                                                 </div>
                                             </div>
-                                           
+                                            <div class="col-md-6 col-lg-6 col-item">
+                                                <div class="form-group select-form mb-0">
+                                                 
+                                                    <select class="form-control " id="select-grid">
+                                                        <option>Newly Published</option>
+                                                        <option>Category 02</option>
+                                                        <option>Category 03</option>
+                                                        <option>Category 04</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>

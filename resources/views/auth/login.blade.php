@@ -42,7 +42,7 @@
                     </div>
                     <div class="welcome-login">
                         <div class="login-banner">
-                            <img src="{{asset('img/img/login2.png')}}" class="img-fluid" alt="Logo">
+                            <img src="{{asset('img/img/query.png')}}" class="img-fluid" alt="Logo">
                         </div>
                         <div class="mentor-course text-center">
                             <h2>Welcome to <br>DreamsLMS Courses.</h2>
@@ -70,9 +70,7 @@
                         <div class="w-100">
                             <div class="img-logo">
                                 <img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
-                                <div class="back-home">
-                                    <a href="index.html">Back to Home</a>
-                                </div>
+                             
                             </div>
                             <h1>Sign into Your Account</h1>
                             <form method="POST" action="{{ route('login') }}">

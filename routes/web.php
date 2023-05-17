@@ -6,10 +6,12 @@ use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminNotificationController;
 use App\Http\Controllers\Admin\AdminPaymentController;
 use App\Http\Controllers\Admin\AdminStudentController;
+use App\Http\Controllers\Admin\AdminTagController;
 use App\Http\Controllers\Admin\AdminTutorController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserCourseViewController;
 use App\Http\Controllers\userinstructorController;
+use App\Http\Controllers\UserNotificationController;
 use App\Http\Controllers\UserProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +49,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/tutorcreate', [AdminTutorController::class, 'create']);
     Route::get('/admin/tutorshow', [AdminTutorController::class, 'show']);
     Route::get('/admin/payment', [AdminPaymentController::class, 'index']);
+    Route::get('/admin/tag', [AdminTagController::class, 'index']);
 });
 
 
@@ -62,13 +65,13 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
   
     Route::get('/home', [UserController::class, 'index'])->name('home');
     Route::get('/user_profile', [UserController::class, 'profile']);
-    Route::get('/Course_view', [UserCourseViewController::class, 'show']);
     Route::get('/Courses', [UserCourseViewController::class, 'index']);
     Route::get('/Courses_grid', [UserCourseViewController::class, 'grid']);
     Route::get('/productShow', [UserProductController::class, 'show']);
     Route::get('/productcheckout', [UserProductController::class, 'checkout']);
     Route::get('/productcart', [UserProductController::class, 'cart']);
     Route::get('/instructor_profile', [userinstructorController::class, 'index']);
+    Route::get('/notification', [UserNotificationController::class, 'index']);
   
 
 });

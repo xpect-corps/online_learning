@@ -28,8 +28,8 @@
                 <div class="settings-widget account-settings">
                     <div class="settings-menu">
                         <h3>DASHBOARD</h3>
-                        <ul> <ul>
-                            <li class="nav-item ">
+                        <ul>
+                            <li class="nav-item  ">
                                 <a href="{{ url('/admin/home') }}" class="nav-link">
                                     <i class="feather-home"></i> My Dashboard
                                 </a>
@@ -51,17 +51,22 @@
                             </li>
                             <li class="nav-item ">
                                 <a href="{{ url('/admin/Category') }}" class="nav-link">
-                                    <i class="feather-users"></i>Category
+                                    <i class="ri-file-list-3-line"></i>Category
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a href="{{ url('/admin/tutor') }}" class="nav-link">
-                                    <i class="feather-users"></i> Tutor
+                                    <i class="ri-slideshow-line"></i>Tutor
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a href="{{ url('/admin/payment') }}" class="nav-link">
-                                    <i class="feather-users"></i> Payment
+                                    <i class="ri-bank-card-line"></i> Payment
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="{{ url('/admin/tag') }}" class="nav-link">
+                                    <i class="ri-bookmark-line"></i> Tag
                                 </a>
                             </li>
                         </ul>
@@ -120,8 +125,11 @@
                                                                         alt="">
                                                                     <p>+1(452) 125-6789</p>
                                                                 </div>
-
                                                             </div>
+                                                        </div>
+                                                        <div >
+                                                           <h6 class="mb-3 d-flex gap-2"> <img src="{{asset('img/icon/cart.svg')}}" alt="img"><span > (03)</span> </h6>
+                                                           <h6 class="mb-0 d-flex gap-2"> <img src="{{asset('img/icon/wish.svg')}}" alt="img"> <span > (02)</span> </h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -147,11 +155,15 @@
                                                                         alt="">
                                                                     <p>+1(452) 125-6789</p>
                                                                 </div>
-
                                                             </div>
+                                                        </div>
+                                                        <div >
+                                                           <h6 class="mb-3 d-flex gap-2"> <img src="{{asset('img/icon/cart.svg')}}" alt="img"><span > (03)</span> </h6>
+                                                           <h6 class="mb-0 d-flex gap-2"> <img src="{{asset('img/icon/wish.svg')}}" alt="img"> <span > (02)</span> </h6>
                                                         </div>
                                                     </div>
                                                 </div>
+                                              
                                             </div>
 
                                         </div>

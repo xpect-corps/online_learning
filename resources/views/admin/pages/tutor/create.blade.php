@@ -105,36 +105,6 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-12 col-12 d-flex justify-content-center">
-                                        {{-- <div class="profile-info-blk">
-                                            <a href="javascript:;" class="profile-info-img">
-                                                <img src="assets/img/students/profile-avatar.png" alt="Profile Avatar"
-                                                    class="img-fluid">
-                                            </a>
-                                            <h4><a href="javascript:;">Gabriel Palmer</a><span>Beginner</span></h4>
-                                            <p>Student</p>
-                                            <ul class="list-unstyled inline-inline profile-info-social">
-                                                <li class="list-inline-item">
-                                                    <a href="javascript:;">
-                                                        <i class="fa-brands fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a href="javascript:;">
-                                                        <i class="fa-brands fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a href="javascript:;">
-                                                        <i class="fa-brands fa-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a href="javascript:;">
-                                                        <i class="fa-brands fa-linkedin"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div> --}}
                                         <div class="course-name d-flex align-items-center">
                                             <div class="form-group">
                                                 <div class=" profile-image-circle">
@@ -142,8 +112,6 @@
                                                 </div>
                                             </div>
                                             <div class=" upload-profile-icon">
-                                                {{-- <span id="fileName"><input type="text" class="border-0 bg-white"
-                                                        disabled placeholder="No file choose"> </span> --}}
                                                 <label class="">
                                                     <img src="{{asset('img/new-icons/upload.png')}}" alt="">
                                                     <input type="file" name="file" class="InputFile" id="myFile"
@@ -194,6 +162,7 @@
                                             <input type="text" class="form-control" placeholder="Birth of Date">
                                         </div>
                                     </div>
+                                
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Country</label>
@@ -206,6 +175,7 @@
                                             </select>
                                         </div>
                                     </div>
+                               
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Address Line 1</label>
@@ -230,6 +200,47 @@
                                             <input type="text" class="form-control" placeholder="Enter your Zipcode">
                                         </div>
                                     </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Category</label>
+                                            <select class="form-select select country-select select2-hidden-accessible"
+                                                name="sellist1" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                                <option data-select2-id="3">Course Category</option>
+                                                <option>India</option>
+                                                <option>America</option>
+                                                <option>London</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Course Tags</label>
+                                            <select class="form-select select select2-hidden-accessible" id="course_Tags"
+                                             data-select2-id="1" tabindex="-1" aria-hidden="true" name="states[]" multiple="multiple>
+                                                <option data-select2-id="3">Select Tags</option>
+                                                <option>India</option>
+                                                <option>America</option>
+                                                <option>London</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-0">
+                                            <label class="add-course-label"
+                                              >Course Description</label
+                                            >
+                                           <textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-0">
+                                            <label class="add-course-label"
+                                              >Profile Description</label
+                                            >
+                                            <div id="editor"></div>
+                                          </div>
+                                    </div>
+                                    
                                    
                                 </div>
                             </form>

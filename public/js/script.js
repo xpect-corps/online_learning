@@ -115,6 +115,19 @@ Version      : 1.0
 			width: '100%'
 		});
 	}
+	if ($('.country-select').length > 0) {
+		$('.country-select').select2({
+			minimumResultsForSearch: -1,
+			width: '100%'
+		});
+	}
+
+
+	// multiselect 
+
+	$(document).ready(function() {
+		$('#course_Tags').select2();
+	});
 	
 	// tooltip
 	
@@ -1140,6 +1153,7 @@ console.log(fileName);
 
 	// profile upload 
 
+	
 
 	
 })(jQuery);
