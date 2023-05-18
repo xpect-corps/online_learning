@@ -59,10 +59,10 @@
     <script src="{{ asset('plugins/apexchart/chart-data.js')}}"></script>
 
     <script src="{{ asset('js/script.js')}}"></script>
+
     <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+    @stack('scripts')
 
-
-  
 </body>
 
 <!-- Mirrored from dreamslms.dreamguystech.com/html/instructor-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Apr 2023 11:13:11 GMT -->

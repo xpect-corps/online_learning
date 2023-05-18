@@ -116,6 +116,7 @@
                                                                 type="button" data-bs-toggle="modal"
                                                                 data-bs-target="#editModal">Edit</button>
                                                             <button class="btn  bg-danger text-white px-3 py-1"
+                                                            onclick="return myConfirm();"
                                                                 type="button" data-bs-toggle="modal"
                                                                 data-bs-target="#deleteModal">Delete</button>
                                                         </div>
@@ -202,28 +203,18 @@
 
     {{-- delet modal  --}}
 
-    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="text-center">
-                        <i class="ri-close-circle-line fs-1 mb-3 text-danger"></i>
-                        <h5>Are you sure?</h5>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 
     @push('scripts')
-        <script></script>
+        <script>
+            function myConfirm() {
+  var result = confirm("Want to delete?");
+  if (result==true) {
+   return true;
+  } else {
+   return false;
+  }
+}
+        </script>
     @endpush
 @endsection

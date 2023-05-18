@@ -96,50 +96,54 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="go-dashboard text-end">
-                                                <a href="{{url('admin/tutorcreate')}}" class="btn btn-primary">Add Tutor</a>
-                                                </div>
+                                                <a href="{{ route('admin.tutor.create') }}" class="btn btn-primary">Add
+                                                    Tutor</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="row">
 
-                                    <div class="col-lg-12 d-flex">
-                                        <div class="instructor-list flex-fill">
-                                            <div class="instructor-img">
-                                                <a href="{{url('admin/tutorshow')}}">
-                                                    <img class="img-fluid" alt="" src="{{asset('img/user/user11.jpg')}}">
-                                                </a>
-                                            </div>
-                                            <div class="instructor-content">
-                                                <h5><a href="{{url('admin/tutorshow')}}">Rolands R</a></h5>
-                                                <h6>Instructor</h6>
-                                                <div class="instructor-info">
-                                                    <div class="rating-img d-flex align-items-center">
-                                                        <img src="{{asset('img/icon/icon-01.svg')}}" class="me-1"
-                                                            alt="">
-                                                        <p>12+ Lesson</p>
-                                                    </div>
-                                                    <div class="course-view d-flex align-items-center ms-0">
-                                                        <img src="{{asset('img/icon/icon-02.svg')}}" class="me-1"
-                                                            alt="">
-                                                        <p>9hr 30min</p>
-                                                    </div>
-                                                    <div class="rating-img d-flex align-items-center">
-                                                        <img src="{{asset('img/icon/user-icon.svg')}}" class="me-1"
-                                                            alt="">
-                                                        <p>50 Students</p>
-                                                    </div>
-                                            
+                                    @foreach ($tutors as $tutor)
+                                        <div class="col-lg-12 d-flex">
+                                            <div class="instructor-list flex-fill">
+                                                <div class="instructor-img">
+                                                    <a href="{{ route('admin.tutor.show', $tutor->id) }}">
+                                                        <img class="img-fluid" alt=""
+                                                            src="{{ asset('/images/tutor/'.$tutor->image) }}">
+                                                    </a>
                                                 </div>
-                                                <div class="instructor-badge">
-                                                    <span class="web-badge">Web Design</span>
-                                                    <span class="web-badge">web development</span>
-                                                    <span class="web-badge">UI Design</span>
+                                                <div class="instructor-content">
+                                                    <h5><a href="{{ route('admin.tutor.show', $tutor->id) }}">{{ $tutor->first_name }} {{ $tutor->last_name }}</a></h5>
+                                                    <h6>Instructor</h6>
+                                                    <div class="instructor-info">
+                                                        <div class="rating-img d-flex align-items-center">
+                                                            <img src="{{ asset('img/icon/icon-01.svg') }}" class="me-1"
+                                                                alt="">
+                                                            <p>12+ Lesson</p>
+                                                        </div>
+                                                        <div class="course-view d-flex align-items-center ms-0">
+                                                            <img src="{{ asset('img/icon/icon-02.svg') }}" class="me-1"
+                                                                alt="">
+                                                            <p>9hr 30min</p>
+                                                        </div>
+                                                        <div class="rating-img d-flex align-items-center">
+                                                            <img src="{{ asset('img/icon/user-icon.svg') }}" class="me-1"
+                                                                alt="">
+                                                            <p>50 Students</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="instructor-badge">
+                                                        <span class="web-badge">Web Design</span>
+                                                        <span class="web-badge">web development</span>
+                                                        <span class="web-badge">UI Design</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    @endforeach
                                 </div>
 
                                 <div class="row">

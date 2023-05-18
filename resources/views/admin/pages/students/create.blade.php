@@ -80,16 +80,16 @@
                     </div>
                 </div>
             </div> --}}
-            <form action="{{ route('admin.tutor.store') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('admin.student.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="add-course-header pb-0">
-                            <h2>Add New Tutor</h2>
+                            <h2>Add New Student</h2>
                             <div class="add-course-btns">
                                 <ul class="nav"> 
                                     <li>
-                                        <a href="{{ route('admin.tutor') }}" class="btn btn-black">Back to Tutor</a>
+                                        <a href="{{ route('admin.student') }}" class="btn btn-black">Back to Students</a>
                                     </li>
                                     <li>
                                         <button type="submit" class="btn btn-success-dark">Save</button>
@@ -169,18 +169,18 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">First Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter your first Name"
-                                                name="f_name" required>
+                                            <label class="form-control-label">Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter Name"
+                                                name="name" required>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    {{-- <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Last Name</label>
                                             <input type="text" class="form-control" placeholder="Enter your last Name"
                                                 name="l_name">
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Phone</label>
@@ -202,7 +202,6 @@
                                                 name="b_day">
                                         </div>
                                     </div>
-                                
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-label">Country</label>
@@ -215,7 +214,6 @@
                                             </select>
                                         </div>
                                     </div>
-                               
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Address Line 1</label>
@@ -251,48 +249,6 @@
                                                 name="password">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Category</label>
-                                            <select class="form-select select country-select select2-hidden-accessible"
-                                                name="sellist1" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                                <option data-select2-id="3">Course Category</option>
-                                                <option>India</option>
-                                                <option>America</option>
-                                                <option>London</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Course Tags</label>
-                                            <select class="form-select select select2-hidden-accessible" id="course_Tags"
-                                             data-select2-id="1" tabindex="-1" aria-hidden="true" name="states[]" multiple="multiple>
-                                                <option data-select2-id="3">Select Tags</option>
-                                                <option>India</option>
-                                                <option>America</option>
-                                                <option>London</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group mb-0">
-                                            <label class="add-course-label"
-                                              >Course Description</label
-                                            >
-                                           <textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
-                                          </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group mb-0">
-                                            <label class="add-course-label"
-                                              >Profile Description</label
-                                            >
-                                            <div id="editor"></div>
-                                          </div>
-                                    </div>
-                                    
-                                   
                                 </div>
                             </div>
                         </div>

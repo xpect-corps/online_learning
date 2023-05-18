@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AdminNotificationController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AdminNotificationController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.notification.index');
+        return view('admin.pages.tag.index');
     }
 
     /**
