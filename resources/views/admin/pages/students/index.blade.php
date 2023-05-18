@@ -46,6 +46,11 @@
                                         <i class="feather-users"></i> Payment
                                     </a>
                                 </li>
+                                <li class="nav-item ">
+                                    <a href="{{ url('/admin/tag') }}" class="nav-link">
+                                        <i class="ri-bookmark-line"></i> Tag
+                                    </a>
+                                </li>
                             </ul>
                     </div>
                 </div>
@@ -86,6 +91,7 @@
                                         <div class="student-grid-blk">
 
                                             <div class="row">
+
                                                 @foreach ($students as $student)
                                                     <div class="col-md-12">
                                                         <div class="instructor-list flex-fill">
@@ -113,7 +119,12 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div >
+                                                           <h6 class="mb-3 d-flex gap-2"> <img src="{{asset('img/icon/cart.svg')}}" alt="img"><span > (03)</span> </h6>
+                                                           <h6 class="mb-0 d-flex gap-2"> <img src="{{asset('img/icon/wish.svg')}}" alt="img"> <span > (02)</span> </h6>
+                                                        </div>
                                                     </div>
+
                                                 @endforeach
 
                                             </div>

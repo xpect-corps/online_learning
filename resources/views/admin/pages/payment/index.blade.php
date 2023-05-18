@@ -29,7 +29,7 @@
                     <div class="settings-menu">
                         <h3>DASHBOARD</h3>
                         <ul>
-                            <li class="nav-item ">
+                            <li class="nav-item  ">
                                 <a href="{{ url('/admin/home') }}" class="nav-link">
                                     <i class="feather-home"></i> My Dashboard
                                 </a>
@@ -51,17 +51,22 @@
                             </li>
                             <li class="nav-item ">
                                 <a href="{{ url('/admin/Category') }}" class="nav-link">
-                                    <i class="feather-users"></i>Category
+                                    <i class="ri-file-list-3-line"></i>Category
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a href="{{ url('/admin/tutor') }}" class="nav-link">
-                                    <i class="feather-users"></i> Tutor
+                                    <i class="ri-slideshow-line"></i>Tutor
                                 </a>
                             </li>
                             <li class="nav-item active">
                                 <a href="{{ url('/admin/payment') }}" class="nav-link">
-                                    <i class="feather-users"></i> Payment
+                                    <i class="ri-bank-card-line"></i> Payment
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="{{ url('/admin/tag') }}" class="nav-link">
+                                    <i class="ri-bookmark-line"></i> Tag
                                 </a>
                             </li>
                         </ul>
@@ -71,154 +76,165 @@
 
 
             <div class="col-xl-9 col-lg-8 col-md-12">
-                <div class="settings-widget pt-3">
-                    <div class="container">
-                        <div class="title-sec">
-                            <div class="row">
-                                <div class="col-sm-6 col-lg-5">
-                                    <h2>Notifications</h2>
-                                   
-                                </div>
+             
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card instructor-card">
+                            <div class="card-header">
+                                <h4>Earnings</h4>
                             </div>
+                            <div class="card-body" style="position: relative;">
+                                <div id="instructor_chart"></div>
                         </div>
-    
-                        <div class="notify-sec">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h5>Today</h5>
-                                    <div class="notify-item">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-9">
-                                                <div class="notify-content">
-                                                    <a href="instructor-profile.html">
-                                                        <img class="avatar-img semirounded-circle"
-                                                            src="assets/img/user/user2.jpg" alt="User Image">
-                                                    </a>
-                                                    <div class="notify-detail">
-                                                        <h6><a href="instructor-profile.html">Rolands R </a><span>Today at 9:42
-                                                                AM</span></h6>
-                                                        <p>It is a long established fact that a reader will be distracted by the
-                                                            readable content of a page when looking at its layout. The point of
-                                                            using Lorem Ipsum is that it has a more-or-less normal distribution
-                                                            of letters, as opposed to using 'Content here,</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="text-md-end">
-                                                    <a href="javascript:;" class="btn">Mark as Read</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="notify-item">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-9">
-                                                <div class="notify-content">
-                                                    <a href="instructor-profile.html">
-                                                        <img class="avatar-img semirounded-circle"
-                                                            src="assets/img/user/user1.jpg" alt="User Image">
-                                                    </a>
-                                                    <div class="notify-detail">
-                                                        <h6><a href="instructor-profile.html">Jenis R. </a><span>Today at 10:08
-                                                                AM</span></h6>
-                                                        <p>It is a long established fact that a reader will be distracted by the
-                                                            readable content of a page when looking at its layout. The point of
-                                                            using Lorem Ipsum is that it has a more-or-less normal distribution
-                                                            of letters, as opposed to using 'Content here,</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="text-md-end">
-                                                    <a href="javascript:;" class="btn">Mark as Read</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5>Yesterday</h5>
-                                    <div class="notify-item">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-9">
-                                                <div class="notify-content">
-                                                    <a href="instructor-profile.html">
-                                                        <img class="avatar-img semirounded-circle"
-                                                            src="assets/img/user/user3.jpg" alt="User Image">
-                                                    </a>
-                                                    <div class="notify-detail">
-                                                        <h6><a href="instructor-profile.html">Jesse Stevens</a> <span>Yesterday
-                                                                at 9:42 AM</span></h6>
-                                                        <p>It is a long established fact that a reader will be distracted by the
-                                                            readable content of a page when looking at its layout. The point of
-                                                            using Lorem Ipsum is that it has a more-or-less normal distribution
-                                                            of letters, as opposed to using 'Content here,</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="text-md-end">
-                                                    <a href="javascript:;" class="btn">Mark as Read</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="notify-item">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-9">
-                                                <div class="notify-content">
-                                                    <a href="instructor-profile.html">
-                                                        <img class="avatar-img semirounded-circle"
-                                                            src="assets/img/user/user7.jpg" alt="User Image">
-                                                    </a>
-                                                    <div class="notify-detail">
-                                                        <h6><a href="instructor-profile.html">Rolands R</a> <span>Yesterday at
-                                                                5:40 AM</span></h6>
-                                                        <p>It is a long established fact that a reader will be distracted by the
-                                                            readable content of a page when looking at its layout. The point of
-                                                            using Lorem Ipsum is that it has a more-or-less normal distribution
-                                                            of letters, as opposed to using 'Content here,</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="text-md-end">
-                                                    <a href="javascript:;" class="btn">Mark as Read</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="notify-item">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-9">
-                                                <div class="notify-content">
-                                                    <a href="instructor-profile.html">
-                                                        <img class="avatar-img semirounded-circle"
-                                                            src="assets/img/user/user11.jpg" alt="User Image">
-                                                    </a>
-                                                    <div class="notify-detail">
-                                                        <h6><a href="instructor-profile.html">John Michael</a> <span>Yesterday
-                                                                at 7:40 AM</span></h6>
-                                                        <p>It is a long established fact that a reader will be distracted by the
-                                                            readable content of a page when looking at its layout. The point of
-                                                            using Lorem Ipsum is that it has a more-or-less normal distribution
-                                                            of letters, as opposed to using 'Content here,</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="text-md-end">
-                                                    <a href="javascript:;" class="btn">Mark as Read</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
                     </div>
                 </div>
-               
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card instructor-card">
+                            <div class="card-header">
+                                <h4>Order</h4>
+                            </div>
+                            <div class="card-body" style="position: relative;">
+                                <div id="order_chart"></div>
+                                                       </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="settings-widget">
+                            <div class="settings-inner-blk p-0">
+                                <div class="sell-course-head comman-space">
+                                    <h3>Payment Details</h3>
+                                </div>
+                                <div class="form-filter comman-space">
+                                    <input type="text" class="form-control name" name="" id="">
+                                    <input type="text" class="form-control email" name="" id="">
+                                    <a href="" class="btn btn-primary button-search ">Search</a>
+                                </div>
+                                <div class="comman-space pb-0">
+                                    <div class="settings-tickets-blk course-instruct-blk table-responsive">
+                                    
+                                    <table class="table table-nowrap mb-0">
+                                    <thead>
+                                    <tr>
+                                    <th>COURSES</th>
+                                    <th>SALES</th>
+                                    <th>INVOICE</th>
+                                    <th>DATE</th>
+                                    <th>METHOD</th>
+                                    <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">Information About UI/UX Design Degree</a></p>
+                                    </td>
+                                    <td>34</td>
+                                    <td>#10021</td>
+                                    <td>10-05-20</td>
+                                    <td>Mastercard</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">Wordpress for Beginners - Master Wordpress Quickly</a></p>
+                                    </td>
+                                    <td>30</td>
+                                    <td>#12421</td>
+                                    <td>10-05-20</td>
+                                    <td>Visa</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">Sketch from A to Z (2022): Become an app designer</a></p>
+                                    </td>
+                                    <td>24</td>
+                                    <td>#11021</td>
+                                    <td>10-05-20</td>
+                                    <td>Mastercard</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">Learn Angular Fundamentals From beginning to advance lavel</a></p>
+                                    </td>
+                                    <td>34</td>
+                                    <td>#10021</td>
+                                    <td>10-05-20</td>
+                                    <td>Mastercard</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">Build Responsive Real World Websites with HTML5 and CSS3</a></p>
+                                    </td>
+                                    <td>34</td>
+                                    <td>#10021</td>
+                                    <td>10-05-20</td>
+                                    <td>Mastercard</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">C# Developers Double Your Coding Speed with Visual Studio</a></p>
+                                    </td>
+                                    <td>34</td>
+                                    <td>#10021</td>
+                                    <td>10-05-20</td>
+                                    <td>Mastercard</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">Learn JavaScript and Express to become a professional JavaScript</a></p>
+                                    </td>
+                                    <td>34</td>
+                                    <td>#10021</td>
+                                    <td>10-05-20</td>
+                                    <td>Mastercard</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">Learn and Understand AngularJS to become a professional developer</a></p>
+                                    </td>
+                                    <td>34</td>
+                                    <td>#10021</td>
+                                    <td>10-05-20</td>
+                                    <td>Mastercard</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">Responsive Web Design Essentials HTML5 CSS3 and Bootstrap</a></p>
+                                    </td>
+                                    <td>34</td>
+                                    <td>#10021</td>
+                                    <td>10-05-20</td>
+                                    <td>Mastercard</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="instruct-orders-info">
+                                    <p><a href="course-details.html">The Complete App Design Course - UX, UI and Design Thinking</a></p>
+                                    </td>
+                                    <td>34</td>
+                                    <td>#10021</td>
+                                    <td>10-05-20</td>
+                                    <td>Mastercard</td>
+                                    <td><a href="javascript:;"><i class="feather-more-vertical"></i></a></td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

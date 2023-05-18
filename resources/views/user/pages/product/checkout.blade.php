@@ -3,7 +3,7 @@
 @section('content')
     {{-- <div class="main-wrapper" style="padding-top: 93px;"> --}}
 
-        <section class="course-content checkout-widget" style="transform: none; padding: 112px 0px;">
+        <section class="course-content checkout-widget mt-4" style="transform: none; ">
             <div class="container" style="transform: none;">
                 <div class="row" style="transform: none;">
                     <div class="col-lg-8">
@@ -51,54 +51,24 @@
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label class="form-label">State</label>
-                                                    <select class="form-select select select2-hidden-accessible"
-                                                        name="sellist1" data-select2-id="1" tabindex="-1"
-                                                        aria-hidden="true">
-                                                        <option data-select2-id="3">Select State</option>
+                                                    <select class="form-select" id="select-grid">
+                                                        <option >Select State</option>
                                                         <option>Brazil</option>
                                                         <option>French</option>
-                                                    </select><span
-                                                        class="select2 select2-container select2-container--default"
-                                                        dir="ltr" data-select2-id="2" style="width: 100%;"><span
-                                                            class="selection"><span
-                                                                class="select2-selection select2-selection--single"
-                                                                role="combobox" aria-haspopup="true" aria-expanded="false"
-                                                                tabindex="0" aria-disabled="false"
-                                                                aria-labelledby="select2-sellist1-jw-container"><span
-                                                                    class="select2-selection__rendered"
-                                                                    id="select2-sellist1-jw-container" role="textbox"
-                                                                    aria-readonly="true" title="Select State">Select
-                                                                    State</span><span class="select2-selection__arrow"
-                                                                    role="presentation"><b
-                                                                        role="presentation"></b></span></span></span><span
-                                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label class="form-label">Country</label>
                                                     <select class="form-select select select2-hidden-accessible"
-                                                        name="sellist1" data-select2-id="4" tabindex="-1"
+                                                        name="sellist1" id="select-Country" data-select2-id="4" tabindex="-1"
                                                         aria-hidden="true">
                                                         <option data-select2-id="6">Select country</option>
                                                         <option>India</option>
                                                         <option>America</option>
                                                         <option>London</option>
-                                                    </select><span
-                                                        class="select2 select2-container select2-container--default"
-                                                        dir="ltr" data-select2-id="5" style="width: 100%;"><span
-                                                            class="selection"><span
-                                                                class="select2-selection select2-selection--single"
-                                                                role="combobox" aria-haspopup="true" aria-expanded="false"
-                                                                tabindex="0" aria-disabled="false"
-                                                                aria-labelledby="select2-sellist1-3r-container"><span
-                                                                    class="select2-selection__rendered"
-                                                                    id="select2-sellist1-3r-container" role="textbox"
-                                                                    aria-readonly="true" title="Select country">Select
-                                                                    country</span><span class="select2-selection__arrow"
-                                                                    role="presentation"><b
-                                                                        role="presentation"></b></span></span></span><span
-                                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
@@ -152,57 +122,23 @@
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label class="form-label">Month</label>
-                                                    <select class="form-select select select2-hidden-accessible"
-                                                        name="sellist1" data-select2-id="7" tabindex="-1"
-                                                        aria-hidden="true">
-                                                        <option data-select2-id="9">Month</option>
+                                                    <select class="form-select" id="select-month">
+                                                        <option>Month</option>
                                                         <option>Jun</option>
                                                         <option>Feb</option>
                                                         <option>March</option>
-                                                    </select><span
-                                                        class="select2 select2-container select2-container--default"
-                                                        dir="ltr" data-select2-id="8" style="width: 100%;"><span
-                                                            class="selection"><span
-                                                                class="select2-selection select2-selection--single"
-                                                                role="combobox" aria-haspopup="true"
-                                                                aria-expanded="false" tabindex="0"
-                                                                aria-disabled="false"
-                                                                aria-labelledby="select2-sellist1-0e-container"><span
-                                                                    class="select2-selection__rendered"
-                                                                    id="select2-sellist1-0e-container" role="textbox"
-                                                                    aria-readonly="true" title="Month">Month</span><span
-                                                                    class="select2-selection__arrow"
-                                                                    role="presentation"><b
-                                                                        role="presentation"></b></span></span></span><span
-                                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label class="form-label">Year</label>
-                                                    <select class="form-select select select2-hidden-accessible"
-                                                        name="sellist1" data-select2-id="10" tabindex="-1"
-                                                        aria-hidden="true">
-                                                        <option data-select2-id="12">Year</option>
-                                                        <option>2022</option>
-                                                        <option>2021</option>
-                                                        <option>2020</option>
-                                                    </select><span
-                                                        class="select2 select2-container select2-container--default"
-                                                        dir="ltr" data-select2-id="11" style="width: 100%;"><span
-                                                            class="selection"><span
-                                                                class="select2-selection select2-selection--single"
-                                                                role="combobox" aria-haspopup="true"
-                                                                aria-expanded="false" tabindex="0"
-                                                                aria-disabled="false"
-                                                                aria-labelledby="select2-sellist1-70-container"><span
-                                                                    class="select2-selection__rendered"
-                                                                    id="select2-sellist1-70-container" role="textbox"
-                                                                    aria-readonly="true" title="Year">Year</span><span
-                                                                    class="select2-selection__arrow"
-                                                                    role="presentation"><b
-                                                                        role="presentation"></b></span></span></span><span
-                                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                    <select class="form-select" id="select-year">
+                                                        <option>Month</option>
+                                                        <option>Jun</option>
+                                                        <option>Feb</option>
+                                                        <option>March</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">

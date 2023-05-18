@@ -1,7 +1,7 @@
 @extends('user.layouts.app')
 
 @section('content')
-    <div class="main-wrapper" style="padding-top: 83px">
+    <div class="main-wrapper" style="padding: 80px 0 30px;">
 
 
         <div class="page-banner instructor-bg-blk">

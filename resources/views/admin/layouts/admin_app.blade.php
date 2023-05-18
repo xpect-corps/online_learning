@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/feather.css')}}">
     <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('plugins/select2/css/select2.min.css')}}" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <link
       rel="stylesheet"

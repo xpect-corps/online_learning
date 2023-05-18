@@ -12,7 +12,7 @@
                         </div>
 
                         <div class="banner-content-five">
-                            <form class="form" action="https://dreamslms.dreamguystech.com/html/course-list.html">
+                            <form class="form" action="">
                                 <div class="form-inner-five">
                                     <div class="input-group">
                                         <span class="drop-detail-five">
@@ -25,7 +25,7 @@
                                             </select>
                                         </span>
 
-                                        <input type="email" class="form-control"
+                                        <input type="" class="form-control"
                                             placeholder="Search School, Online eductional centers, etc" />
 
                                         <button class="btn btn-primary sub-btn" type="submit">
@@ -173,7 +173,7 @@
         <div class="container">
             <div class="row">
                 <div class="header-five-title text-center  section-header-title" data-aos="fade-up">
-                    <div class="row align-items-center d-flex justify-content-between mb-5">
+                    <div class="row align-items-center d-flex justify-content-between mb-4">
                         <div class="col-lg-12">
                             <h2>Most Trending Courses</h2>
                         </div>
@@ -213,7 +213,7 @@
                                     </div>
                                 </div>
                                 <div class="trending-footer-img">
-                                    <a href="{{url('/productShow')}}"><img src="{{asset('img/profiles/avatar-04.jpg')}}"
+                                    <a href="{{url('/instructor_profile')}}"><img src="{{asset('img/profiles/avatar-04.jpg')}}"
                                             alt="img" /></a>
                                 </div>
                             </div>
@@ -253,7 +253,7 @@
                                     </div>
                                 </div>
                                 <div class="trending-footer-img">
-                                    <a href="{{url('/productShow')}}"><img src="{{asset('img/profiles/avatar-05.jpg')}}"
+                                    <a href="{{url('/instructor_profile')}}"><img src="{{asset('img/profiles/avatar-05.jpg')}}"
                                             alt="img" /></a>
                                 </div>
                             </div>
@@ -293,7 +293,7 @@
                                     </div>
                                 </div>
                                 <div class="trending-footer-img">
-                                    <a href="{{url('/productShow')}}"><img src="{{asset('img/profiles/avatar-06.jpg')}}"
+                                    <a href="{{url('/instructor_profile')}}"><img src="{{asset('img/profiles/avatar-06.jpg')}}"
                                             alt="img" /></a>
                                 </div>
                             </div>
@@ -333,7 +333,7 @@
                                     </div>
                                 </div>
                                 <div class="trending-footer-img">
-                                    <a href="{{url('/productShow')}}"><img src="{{asset('img/profiles/avatar-07.jpg')}}"
+                                    <a href="{{url('/instructor_profile')}}"><img src="{{asset('img/profiles/avatar-07.jpg')}}"
                                             alt="img" /></a>
                                 </div>
                             </div>
@@ -373,7 +373,7 @@
                                     </div>
                                 </div>
                                 <div class="trending-footer-img">
-                                    <a href="{{url('/productShow')}}"><img src="{{asset('img/profiles/avatar-08.jpg')}}"
+                                    <a href="{{url('/instructor_profile')}}"><img src="{{asset('img/profiles/avatar-08.jpg')}}"
                                             alt="img" /></a>
                                 </div>
                             </div>
@@ -413,7 +413,7 @@
                                     </div>
                                 </div>
                                 <div class="trending-footer-img">
-                                    <a href="{{url('/productShow')}}"><img src="{{asset('img/profiles/avatar-09.jpg')}}"
+                                    <a href="{{url('/instructor_profile')}}"><img src="{{asset('img/profiles/avatar-09.jpg')}}"
                                             alt="img" /></a>
                                 </div>
                             </div>
@@ -453,7 +453,7 @@
                                     </div>
                                 </div>
                                 <div class="trending-footer-img">
-                                    <a href="{{url('/productShow')}}"><img src="{{asset('img/profiles/avatar-10.jpg')}}"
+                                    <a href="{{url('/instructor_profile')}}"><img src="{{asset('img/profiles/avatar-10.jpg')}}"
                                             alt="img" /></a>
                                 </div>
                             </div>
@@ -493,7 +493,7 @@
                                     </div>
                                 </div>
                                 <div class="trending-footer-img">
-                                    <a href="{{{url('/productShow')}}}"><img src="{{asset('img/profiles/avatar-02.jpg')}}"
+                                    <a href="{{{url('/instructor_profile')}}}"><img src="{{asset('img/profiles/avatar-02.jpg')}}"
                                             alt="img" /></a>
                                 </div>
                             </div>
@@ -557,12 +557,12 @@
                                                     <div class="product-content-five">
                                                         <div class="course-group-five">
                                                             <div class="course-group-img-five">
-                                                                <a href="{{{url('/productShow')}}}">
+                                                                <a href="{{{url('/instructor_profile')}}}">
                                                                     <img src="{{ asset('img/user/user2.jpg') }}" alt
                                                                         class="img-fluid" />
                                                                 </a>
                                                                 <h6>
-                                                                    <a href="{{{url('/productShow')}}}">Cristofer Nolen</a>
+                                                                    <a href="{{{url('/instructor_profile')}}}">Cristofer Nolen</a>
                                                                 </h6>
                                                             </div>
                                                             <div class="course-share-five">
@@ -576,7 +576,7 @@
                                                             </div>
                                                         </div>
                                                         <h3 class="product-five-title">
-                                                            <a href="course-details.html">The Complete Web Developer PHP
+                                                            <a href="{{url('/productShow')}}">The Complete Web Developer PHP
                                                                 framework
                                                                 Course 2.0</a>
                                                         </h3>
@@ -2845,7 +2845,7 @@
     <section class="m section master-skill">
         <div class="container">
             <div class="master-five-vector">
-                <img class="ellipse-right" src="assets/img/bg/master-vector-left.svg" alt />
+                <img class="ellipse-right" src="{{asset('img/bg/master-vector-left.svg')}}" alt />
             </div>
             <div class="row">
 
@@ -2986,11 +2986,11 @@
         </div>
     </section>
 
-    <section class="m section master-skill " style="    padding: 140px 0px 0px;">
+    <section class=" section master-skill app-adv-section " >
         <div class="container">
-            <div class="master-five-vector">
+            {{-- <div class="master-five-vector">
                 <img class="ellipse-right" src="{{ asset('img/bg/master-vector-left.svg') }}" alt="">
-            </div>
+            </div> --}}
             <div class="row">
 
                 <div class="col-lg-12 col-md-12  aos-init aos-animate" data-aos="fade-down">
@@ -2998,8 +2998,8 @@
                         <div class="row">
                             <div class="col-lg-7 col-md-12 d-flex align-items-center  aos-init aos-animate"
                                 data-aos="fade-up">
-                                <div class="header-five-title mb-0">
-                                    <h2 class="mb-3">Download our app from <br> <span style="color:#2766CF"> App-store</span> for free</h2>
+                                <div class="header-five-title mb-3">
+                                    <h2 class="mb-3">Download our app from  <span style="color:#2766CF"> App-store</span> for free</h2>
                                     <a href="">
                                     <img width="25%" src="{{asset('img/img/playstore.png')}}" alt="">
                                     </a>

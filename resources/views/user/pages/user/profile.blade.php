@@ -1,7 +1,7 @@
 @extends('user.layouts.app')
 
 @section('content')
-    <div class="main-wrapper" style="transform: none;     padding-top: 83px;">
+    <div class="main-wrapper" style="transform: none; padding: 80px 0 30px;">
 
         <div class="page-banner student-bg-blk">
             <div class="container">
@@ -96,37 +96,6 @@
                                     <div class="edu-detail">
                                         <h6>Design Communication Visual</h6>
                                         <p class="edu-duration">International University - (2012-2015)</p>
-                                        <p>There are many variations of passages of available, but the majority alteration
-                                            in some form. As a highly skilled and successfull product development and design
-                                            specialist with more than 4 Years of My experience.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card education-sec">
-                            <div class="card-body">
-                                <h5 class="subs-title">Experience</h5>
-                                <div class="edu-wrap">
-                                    <div class="edu-name">
-                                        <span>B</span>
-                                    </div>
-                                    <div class="edu-detail">
-                                        <h6>Web Design &amp; Development Team Leader</h6>
-                                        <p class="edu-duration">Creative Agency - (2013 - 2016)</p>
-                                        <p>There are many variations of passages of available, but the majority alteration
-                                            in some form. As a highly skilled and successfull product development and design
-                                            specialist with more than 4 Years of My experience.</p>
-                                    </div>
-                                </div>
-                                <div class="edu-wrap">
-                                    <div class="edu-name">
-                                        <span>M</span>
-                                    </div>
-                                    <div class="edu-detail">
-                                        <h6>Project Manager</h6>
-                                        <p class="edu-duration">Jobcy Technology Pvt.Ltd - (Pressent)</p>
                                         <p>There are many variations of passages of available, but the majority alteration
                                             in some form. As a highly skilled and successfull product development and design
                                             specialist with more than 4 Years of My experience.</p>
@@ -325,7 +294,7 @@
 
                         <div class="theiaStickySidebar"
                             style="padding-top: 0px; padding-bottom: 1px; position: relative; transform: none;">
-                            <div class="card overview-sec">
+                            {{-- <div class="card overview-sec">
                                 <div class="card-body overview-sec-body">
                                     <h5 class="subs-title">Professional Skills</h5>
                                     <div class="sidebar-tag-labels">
@@ -338,7 +307,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="card overview-sec">
                                 <div class="card-body">
                                     <h5 class="subs-title">Contact Details</h5>
@@ -399,112 +368,6 @@
             </div>
         </section>
 
-
-        <footer class="footer">
-
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-
-                            <div class="footer-widget footer-about">
-                                <div class="footer-logo">
-                                    <img src="assets/img/logo.svg" alt="logo">
-                                </div>
-                                <div class="footer-about-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat mauris Lorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat mauris</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-6">
-
-                            <div class="footer-widget footer-menu">
-                                <h2 class="footer-title">For Instructor</h2>
-                                <ul>
-                                    <li><a href="instructor-profile.html">Profile</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="instructor-list.html">Instructor</a></li>
-                                    <li><a href="deposit-instructor-dashboard.html"> Dashboard</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-2 col-md-6">
-
-                            <div class="footer-widget footer-menu">
-                                <h2 class="footer-title">For Student</h2>
-                                <ul>
-                                    <li><a href="student-profile.html">Profile</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="students-list.html">Student</a></li>
-                                    <li><a href="deposit-student-dashboard.html"> Dashboard</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-
-                            <div class="footer-widget footer-contact">
-                                <h2 class="footer-title">News letter</h2>
-                                <div class="news-letter">
-                                    <form>
-                                        <input type="text" class="form-control" placeholder="Enter your email address"
-                                            name="email">
-                                    </form>
-                                </div>
-                                <div class="footer-contact-info">
-                                    <div class="footer-address">
-                                        <img src="assets/img/icon/icon-20.svg" alt="" class="img-fluid">
-                                        <p> 3556 Beech Street, San Francisco,<br> California, CA 94108 </p>
-                                    </div>
-                                    <p>
-                                        <img src="assets/img/icon/icon-19.svg" alt="" class="img-fluid">
-                                        <a href="https://dreamslms.dreamguystech.com/cdn-cgi/l/email-protection"
-                                            class="__cf_email__"
-                                            data-cfemail="97f3e5f2f6fae4fbfae4d7f2eff6fae7fbf2b9f4f8fa">[email&nbsp;protected]</a>
-                                    </p>
-                                    <p class="mb-0">
-                                        <img src="assets/img/icon/icon-21.svg" alt="" class="img-fluid">
-                                        +19 123-456-7890
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="footer-bottom">
-                <div class="container">
-
-                    <div class="copyright">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="privacy-policy">
-                                    <ul>
-                                        <li><a href="term-condition.html">Terms</a></li>
-                                        <li><a href="privacy-policy.html">Privacy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="copyright-text">
-                                    <p class="mb-0">© 2023 DreamsLMS. All rights reserved.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </footer>
 
     </div>
 @endsection

@@ -68,7 +68,12 @@
 <script src="{{asset('plugins/aos/aos.js')}}"></script>
 
 <script src="{{asset('js/script.js')}}"></script>
+<script src="{{asset('js/user.js')}}"></script>
 <script src="{{asset('plugins/swiper/js/swiper.min.js')}}"></script>
+
+
+
+
 </body>
 
 <!-- Mirrored from dreamslms.dreamguystech.com/html/instructor-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Apr 2023 11:13:11 GMT -->

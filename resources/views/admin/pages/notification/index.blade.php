@@ -29,7 +29,7 @@
                     <div class="settings-menu">
                         <h3>DASHBOARD</h3>
                         <ul>
-                            <li class="nav-item ">
+                            <li class="nav-item  ">
                                 <a href="{{ url('/admin/home') }}" class="nav-link">
                                     <i class="feather-home"></i> My Dashboard
                                 </a>
@@ -51,17 +51,22 @@
                             </li>
                             <li class="nav-item ">
                                 <a href="{{ url('/admin/Category') }}" class="nav-link">
-                                    <i class="feather-users"></i>Category
+                                    <i class="ri-file-list-3-line"></i>Category
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a href="{{ url('/admin/tutor') }}" class="nav-link">
-                                    <i class="feather-users"></i> Tutor
+                                    <i class="ri-slideshow-line"></i>Tutor
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a href="{{ url('/admin/payment') }}" class="nav-link">
-                                    <i class="feather-users"></i> Payment
+                                    <i class="ri-bank-card-line"></i> Payment
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="{{ url('/admin/tag') }}" class="nav-link">
+                                    <i class="ri-bookmark-line"></i> Tag
                                 </a>
                             </li>
                         </ul>
@@ -90,6 +95,10 @@
                                         <input type="text" class="form-control" placeholder="Notification Title ">
                                     </div>
                                     <div class="form-group">
+                                        <label class="add-course-label">Notification Text</label>
+                                        <textarea name="" id="" class="form-control" cols="30" rows="5"></textarea>
+                                    </div>
+                                    <div class="form-group">
                                         <label class="add-course-label">Notification Poster</label>
 
                                         <div class="relative-form">
@@ -114,7 +123,7 @@
 
                         </div>
 
-                     
+
                     </div>
 
                 </div>
@@ -130,7 +139,7 @@
                                             <div class="notify-content">
                                                 <a href="instructor-profile.html">
                                                     <img class="avatar-img semirounded-circle"
-                                                        src="assets/img/user/user2.jpg" alt="User Image">
+                                                        src="{{asset('img/user/user2.jpg')}}" alt="User Image">
                                                 </a>
                                                 <div class="notify-detail">
                                                     <h6><a href="instructor-profile.html">Rolands R </a><span>Today at 9:42
@@ -143,109 +152,9 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="javascript:;" class="btn">Mark as Read</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="notify-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-9">
-                                            <div class="notify-content">
-                                                <a href="instructor-profile.html">
-                                                    <img class="avatar-img semirounded-circle"
-                                                        src="assets/img/user/user1.jpg" alt="User Image">
-                                                </a>
-                                                <div class="notify-detail">
-                                                    <h6><a href="instructor-profile.html">Jenis R. </a><span>Today at 10:08
-                                                            AM</span></h6>
-                                                    <p>It is a long established fact that a reader will be distracted by the
-                                                        readable content of a page when looking at its layout. The point of
-                                                        using Lorem Ipsum is that it has a more-or-less normal distribution
-                                                        of letters, as opposed to using 'Content here,</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="javascript:;" class="btn">Mark as Read</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h5>Yesterday</h5>
-                                <div class="notify-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-9">
-                                            <div class="notify-content">
-                                                <a href="instructor-profile.html">
-                                                    <img class="avatar-img semirounded-circle"
-                                                        src="assets/img/user/user3.jpg" alt="User Image">
-                                                </a>
-                                                <div class="notify-detail">
-                                                    <h6><a href="instructor-profile.html">Jesse Stevens</a> <span>Yesterday
-                                                            at 9:42 AM</span></h6>
-                                                    <p>It is a long established fact that a reader will be distracted by the
-                                                        readable content of a page when looking at its layout. The point of
-                                                        using Lorem Ipsum is that it has a more-or-less normal distribution
-                                                        of letters, as opposed to using 'Content here,</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="javascript:;" class="btn">Mark as Read</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="notify-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-9">
-                                            <div class="notify-content">
-                                                <a href="instructor-profile.html">
-                                                    <img class="avatar-img semirounded-circle"
-                                                        src="assets/img/user/user7.jpg" alt="User Image">
-                                                </a>
-                                                <div class="notify-detail">
-                                                    <h6><a href="instructor-profile.html">Rolands R</a> <span>Yesterday at
-                                                            5:40 AM</span></h6>
-                                                    <p>It is a long established fact that a reader will be distracted by the
-                                                        readable content of a page when looking at its layout. The point of
-                                                        using Lorem Ipsum is that it has a more-or-less normal distribution
-                                                        of letters, as opposed to using 'Content here,</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="javascript:;" class="btn">Mark as Read</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="notify-item">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-9">
-                                            <div class="notify-content">
-                                                <a href="instructor-profile.html">
-                                                    <img class="avatar-img semirounded-circle"
-                                                        src="assets/img/user/user11.jpg" alt="User Image">
-                                                </a>
-                                                <div class="notify-detail">
-                                                    <h6><a href="instructor-profile.html">John Michael</a> <span>Yesterday
-                                                            at 7:40 AM</span></h6>
-                                                    <p>It is a long established fact that a reader will be distracted by the
-                                                        readable content of a page when looking at its layout. The point of
-                                                        using Lorem Ipsum is that it has a more-or-less normal distribution
-                                                        of letters, as opposed to using 'Content here,</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="javascript:;" class="btn">Mark as Read</a>
+                                            <div class="text-md-end ">
+                                                <a href="javascript:;" class="btn p-0 mb-2 text-danger border-danger reshedule">Reshedule</a>
+                                                <a href="javascript:;" class="btn p-0 publish">Publish</a>
                                             </div>
                                         </div>
                                     </div>

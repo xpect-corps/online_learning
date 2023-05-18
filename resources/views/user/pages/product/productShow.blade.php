@@ -1,7 +1,7 @@
 @extends('user.layouts.app')
 
 @section('content')
-    <div class="main-wrapper" style="padding-top: 85px;">
+    <div class="main-wrapper" style=" padding-top: 80px">
 
         <div class="inner-banner">
             <div class="container">
@@ -14,7 +14,7 @@
                                             class="img-fluid"></a>
                                 </div>
                                 <div class="instructor-detail me-3">
-                                    <h5><a href="instructor-profile.html">Nicole Brown</a></h5>
+                                    <h5><a href="{{url('/instructor_profile')}}">Nicole Brown</a></h5>
                                     <p>UX/UI Designer</p>
                                 </div>
                                 <div class="rating mb-0">

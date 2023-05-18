@@ -4,6 +4,7 @@
 <div class="container-fluid" style="transform: none;">
     <div class="row" style="transform: none;">
 
+
             <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar"
                 style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
 
@@ -49,6 +50,11 @@
                                         <i class="feather-users"></i> Payment
                                     </a>
                                 </li>
+                                <li class="nav-item ">
+                                    <a href="{{ url('/admin/tag') }}" class="nav-link">
+                                        <i class="ri-bookmark-line"></i> Tag
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -85,34 +91,23 @@
                                             Category</a>
                                     </div>
                                 </div>
+                                <div class="form-filter comman-space">
+                                    <input type="text" class="form-control name" name="" id="">
+                                    <input type="text" class="form-control email" name="" id="">
+                                    <a href="" class="btn btn-primary button-search ">Search</a>
+                                </div>
                                 <div class="comman-space pb-0">
-                                    <div class="instruct-search-blk">
-                                        <div class="show-filter choose-search-blk">
-                                            <form action="#">
-                                                <div class="row gx-2 align-items-center">
-                                                    <div class="col-md-6 col-item">
-                                                        <div class=" search-group">
-                                                            <i class="feather-search"></i>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Search our category">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 col-lg-6 col-item">
-
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="settings-tickets-blk course-instruct-blk table-responsive">
 
                                         <table class="table table-nowrap mb-2">
                                             <thead>
                                                 <tr>
-                                                    <th>COURSES</th>
-                                                    <th>STUDENTS</th>
-                                                    <th>STATUS</th>
-                                                    <th>ACTION</th>
+                                                   <th>COURSES</th>
+                                                <th>AMOUNT</th>
+                                                <th>STUDENTS</th>
+                                                <th>STATUS</th>
+                                                <th>ACTION</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -146,6 +141,7 @@
                                                                 </div>
                                                             </div>
                                                         </td>
+                                                        <td>RS 1200/-</td>
                                                         <td>3200</td>
                                                         <td>
                                                             @if ($category->status == 1)
@@ -190,6 +186,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td>RS 1200/-</td>
                                                 <td>0</td>
                                                 <td><span class="badge info-inter">Darft</span></td>
                                             </tr> --}}
@@ -217,6 +214,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td>RS 1200/-</td>
                                                 <td>1500</td>
                                                 <td><span class="badge info-low">Live</span></td>
                                             </tr> --}}
