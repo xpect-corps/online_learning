@@ -143,7 +143,7 @@
 }
 
 .header-five-title {
-  margin-left: 70px;
+  /* margin-left: 70px; */
 }
 
 @media only screen and (max-width: 768px) {
@@ -189,6 +189,18 @@ flex:1 0 130px;
 .button-search {
 flex:1 0 40px;
 }
-.btn-edit{
-background-color: ;
+.owl-carousel .owl-item img{
+  border-radius: 10px 10px 0 0 ;
+}
+.video-modal-close{
+  z-index: 1;
+  right: 0;
+  color: #fff !important;
+  padding: 8px !important;
+  opacity: 1;
+  font-size: 10px;
+}
+.btn-play{
+  top: 0;
+  margin: 115px;
 }

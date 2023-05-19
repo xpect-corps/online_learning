@@ -33,6 +33,7 @@
 
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
     <link rel="stylesheet" href="{{asset('css/custom.css')}}" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 
 
 
@@ -70,8 +71,6 @@
 <script src="{{asset('js/script.js')}}"></script>
 <script src="{{asset('js/user.js')}}"></script>
 <script src="{{asset('plugins/swiper/js/swiper.min.js')}}"></script>
-
-
 
 
 </body>
