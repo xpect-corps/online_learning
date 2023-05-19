@@ -9,7 +9,7 @@
                 @csrf
                 <div class="row align-items-center">
                     <div class="col-md-12">
-                        <div class="add-course-header pb-0">
+                        <div class="add-course-header pb-0 mb-3">
                             <h2>Add New Category</h2>
                             <div class="add-course-btns">
                                 <ul class="nav">
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="col-xl-12 col-md-12">
-                    <div class="settings-widget profile-details">
+                    <div class=" profile-details">
                         <div class="settings-menu p-0">
                             <div class="page-banner student-bg-blk bg-white">
                                 <div class="container">

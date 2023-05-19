@@ -17034,10 +17034,9 @@ margin-bottom: 7px;
 -----------------------*/
 
 .settings-widget {
-	border: 1px solid #e9ecef;
-    margin-top: 30px;
-	border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px;
+    margin-top: 77px;
+    width: 260px;
+    position: fixed;
 }
 .settings-menu {
 	background: #fff;

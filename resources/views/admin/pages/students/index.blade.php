@@ -4,61 +4,8 @@
     <div class="container-fluid" style="transform: none;">
         <div class="row" style="transform: none;">
 
-            <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
-
-                <div class="settings-widget account-settings">
-                    <div class="settings-menu">
-                        <h3>DASHBOARD</h3>
-                        <ul>
-                            <ul>
-                                <li class="nav-item ">
-                                    <a href="{{ url('/admin/home') }}" class="nav-link">
-                                        <i class="feather-home"></i> My Dashboard
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="{{ url('/admin/course') }}" class="nav-link">
-                                        <i class="feather-book"></i> My Courses
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="{{ url('/admin/notification') }}" class="nav-link">
-                                        <i class="feather-bell"></i> Notifications
-                                    </a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a href="{{ url('/admin/students') }}" class="nav-link">
-                                        <i class="feather-users"></i> Students
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="{{ url('/admin/Category') }}" class="nav-link">
-                                        <i class="feather-users"></i>Category
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ url('/admin/tutor') }}" class="nav-link">
-                                        <i class="feather-users"></i> Tutor
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ url('/admin/payment') }}" class="nav-link">
-                                        <i class="feather-users"></i> Payment
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="{{ url('/admin/tag') }}" class="nav-link">
-                                        <i class="ri-bookmark-line"></i> Tag
-                                    </a>
-                                </li>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xl-9 col-lg-8 col-md-12">
-                <div class="settings-widget py-4">
+            <div class=" col-md-12">
+                <div class="">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
@@ -118,11 +65,12 @@
 
                                                                 </div>
                                                             </div>
+                                                            <div >
+                                                                <h6 class="mb-3 d-flex gap-2"> <img src="{{asset('img/icon/cart.svg')}}" alt="img"><span > (03)</span> </h6>
+                                                                <h6 class="mb-0 d-flex gap-2"> <img src="{{asset('img/icon/wish.svg')}}" alt="img"> <span > (02)</span> </h6>
+                                                             </div>
                                                         </div>
-                                                        <div >
-                                                           <h6 class="mb-3 d-flex gap-2"> <img src="{{asset('img/icon/cart.svg')}}" alt="img"><span > (03)</span> </h6>
-                                                           <h6 class="mb-0 d-flex gap-2"> <img src="{{asset('img/icon/wish.svg')}}" alt="img"> <span > (02)</span> </h6>
-                                                        </div>
+                                                      
                                                     </div>
 
                                                 @endforeach
