@@ -13,12 +13,12 @@ use App\Http\Controllers\UserCourseViewController;
 use App\Http\Controllers\userinstructorController;
 use App\Http\Controllers\UserNotificationController;
 use App\Http\Controllers\UserProductController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return redirect()->route('login');
 });
-
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -64,6 +64,10 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
         // Tags
         Route::get('/tag', [TagController::class, 'index']);
+        Route::post('add-tag',[TagController::class,'store'])->name('add_tag');
+        Route::post('update-tag',[TagController::class,'update'])->name('update_tag');
+        Route::get('delete_tag/{id}',[TagController::class,'destroy']);
+
 
     });
 });
@@ -88,6 +92,6 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/productcart', [UserProductController::class, 'cart']);
     Route::get('/instructor_profile', [userinstructorController::class, 'index']);
     Route::get('/notification', [UserNotificationController::class, 'index']);
-  
+
 
 });
