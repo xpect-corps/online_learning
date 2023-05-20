@@ -4,83 +4,11 @@
 <div class="container-fluid" style="transform: none;">
     <div class="row" style="transform: none;">
 
-
-            <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar"
-                style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
-
-
-                <div class="theiaStickySidebar"
-                    style="padding-top: 1px; padding-bottom: 1px; position: static; transform: none; left: 76.4px; top: 0px;">
-                    <div class="settings-widget account-settings">
-                        <div class="settings-menu">
-                            <h3>DASHBOARD</h3>
-                            <ul>
-                                <li class="nav-item ">
-                                    <a href="{{ url('/admin/home') }}" class="nav-link">
-                                        <i class="feather-home"></i> My Dashboard
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="{{ url('/admin/course') }}" class="nav-link">
-                                        <i class="feather-book"></i> My Courses
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ url('/admin/notification') }}" class="nav-link">
-                                        <i class="feather-bell"></i> Notifications
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="{{ url('/admin/students') }}" class="nav-link">
-                                        <i class="feather-users"></i> Students
-                                    </a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a href="{{ url('/admin/Category') }}" class="nav-link">
-                                        <i class="feather-users"></i>Category
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ url('/admin/tutor') }}" class="nav-link">
-                                        <i class="feather-users"></i> Tutor
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ url('/admin/payment') }}" class="nav-link">
-                                        <i class="feather-users"></i> Payment
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="{{ url('/admin/tag') }}" class="nav-link">
-                                        <i class="ri-bookmark-line"></i> Tag
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="resize-sensor"
-                        style="position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
-                        <div class="resize-sensor-expand"
-                            style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
-                            <div
-                                style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 295px; height: 1396px;">
-                            </div>
-                        </div>
-                        <div class="resize-sensor-shrink"
-                            style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
-                            <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xl-9 col-lg-8 col-md-12">
+            <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-12">
 
-                        <div class="settings-widget">
+                        <div class="">
 
                             <div class="settings-inner-blk p-0">
                                 <div
@@ -151,7 +79,7 @@
                                                             @endif
                                                         </td>
                                                         <td>
-                                                            <a href="{{ route('admin.category.edit', $category->id) }}" class="btn btn-info btn-lg">
+                                                            <a href="{{ route('admin.category.edit', $category->id) }}" class="btn btn-info text-white">
                                                                 <span class="glyphicon glyphicon-edit"></span> Edit
                                                               </a>
                                                         </td>

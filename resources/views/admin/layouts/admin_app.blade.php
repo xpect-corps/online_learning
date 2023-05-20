@@ -34,8 +34,9 @@
     <div class="main-wrapper">
 
         @include('admin.layouts.components.header')
-
-        <div class="page-content instructor-page-content">
+        @include('admin.layouts.components.sidebar')
+        <div class="page-content instructor-page-content w-100" style="margin-left: 261px;     padding-top: 110px !important;">
+          
             @yield('content')
         </div>
         {{-- @include('admin.layouts.components.footer') --}}

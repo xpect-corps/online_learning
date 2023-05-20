@@ -32,3 +32,6 @@ forEach(link => {
         link.classList.add('active');
     }
 })
+
+// video open modal 
+

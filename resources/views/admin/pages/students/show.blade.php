@@ -8,9 +8,9 @@
                 style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
 
 
-                <div class="theiaStickySidebar"
+                <div class="theiaStickySidebar mt-3"
                     style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;">
-                    <div class="settings-widget dash-profile mb-3">
+                    <div class=" dash-profile mb-3">
                         <div class="settings-menu p-0">
                             <div class="profile-bg">
                                 <img src="{{ asset('img/profile-bg.jpg') }}" alt="">
@@ -62,7 +62,7 @@
 
 
             <div class="col-xl-9 col-md-8">
-                <div class="settings-widget profile-details">
+                <div class="profile-details mb-4">
                     <div class="card wish-card mb-0">
                         <div class="card-header p-4">
                             <h5>Purchased Courses (03 items)</h5>
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="settings-widget profile-details">
+                <div class=" profile-details">
                     <div class="card wish-card mb-0">
                         <div class="card-header p-4">
                             <h5>Wishlisted Course (03 items)</h5>

@@ -14,7 +14,7 @@
 
                     <div class="theiaStickySidebar"
                         style="padding-top: 1px; padding-bottom: 1px; position: relative; transform: none;">
-                        <div class="settings-widget dash-profile mb-3">
+                        <div class=" dash-profile mt-4">
                             <div class="settings-menu p-0">
                                 <div class="profile-bg">
                                     <img src="http://127.0.0.1:8000/img/profile-bg.jpg" alt="">
@@ -85,7 +85,7 @@
 
 
             <div class="col-xl-9 col-md-8">
-                <div class="settings-widget profile-details">
+                <div class=" profile-details">
                     <div class="settings-menu p-0">
                         {{-- <div class="profile-heading">
                             <h3>Profile Details</h3>
