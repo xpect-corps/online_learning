@@ -682,8 +682,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -745,8 +746,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -808,8 +810,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -871,8 +874,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -934,8 +938,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -997,8 +1002,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1066,8 +1072,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1128,8 +1135,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1191,8 +1199,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1253,8 +1262,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1316,8 +1326,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1379,8 +1390,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1447,8 +1459,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1510,8 +1523,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1573,8 +1587,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1636,8 +1651,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1699,8 +1715,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1762,8 +1779,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1831,8 +1849,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1894,8 +1913,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -1957,8 +1977,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2020,8 +2041,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2083,8 +2105,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2146,8 +2169,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2214,8 +2238,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2277,8 +2302,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2340,8 +2366,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2403,8 +2430,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2465,8 +2493,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2527,8 +2556,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2596,8 +2626,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2659,8 +2690,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2722,8 +2754,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2785,8 +2818,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2848,8 +2882,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
@@ -2911,8 +2946,9 @@
                                                                 <p>8hr 30min</p>
                                                             </div>
                                                             <div class="rating-img">
-                                                                <span class="me-2"><i
-                                                                        class="fa-solid fa-book-open"></i></span>
+                                                                <span class="me-2">
+                                                                    <img src="{{asset('img/icon/icon-01.svg')}}" alt="">
+                                                                </span>
                                                                 <p>10+ Lesson</p>
                                                             </div>
                                                         </div>
