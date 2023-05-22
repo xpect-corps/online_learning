@@ -19,11 +19,11 @@
             </div>
         </div>
     </div> --}}
-    <div class="settings-widget account-settings ">
+    <div class="settings-widget account-settings mt-0">
         <div class="settings-menu">
             <h3>DASHBOARD</h3>
             <ul>
-                <li class="nav-item active ">
+                <li class="nav-item ">
                     <a href="{{ url('/admin/home') }}" class="nav-link">
                         <i class="feather-home"></i> My Dashboard
                     </a>

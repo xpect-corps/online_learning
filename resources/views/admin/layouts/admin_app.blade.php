@@ -31,11 +31,11 @@
 
 <body>
 
-    <div class="main-wrapper">
+    <div class="main-wrapper " >
 
         @include('admin.layouts.components.header')
         @include('admin.layouts.components.sidebar')
-        <div class="page-content instructor-page-content w-100" style="margin-left: 261px;     padding-top: 110px !important;">
+        <div class="page-content instructor-page-content " style="margin-left: 261px;     padding-top: 15px !important;">
           
             @yield('content')
         </div>
