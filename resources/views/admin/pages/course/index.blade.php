@@ -10,8 +10,7 @@
                         <div class="mb-4">
 
                             <div class="settings-inner-blk p-0">
-                                <div
-                                    class="sell-course-head comman-space d-flex justify-content-between align-items-center">
+                                <div class="sell-course-head comman-space d-flex justify-content-between align-items-center">
                                     <h3>Top Courses</h3>
                                 </div>
                                 <div class="comman-space pb-0">
@@ -240,6 +239,7 @@
                                                     <th>COURSES</th>
                                                     <th>STUDENTS</th>
                                                     <th>STATUS</th>
+                                                    <th>ACTIONS</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -277,11 +277,25 @@
                                                         <td>
                                                             @if ($course->status == 1)
                                                                 <span class="badge info-low">Live</span>
+                                                            @else
+                                                                <span class="badge info-inter">Darft</span>
+                                                            @endif
                                                         </td>
-                                                    @else
-                                                        <span class="badge info-inter">Darft</span>
-                                                @endif
-                                                </tr>
+                                                        <td>
+                                                            <div class="more">
+                                                                <i class="feather-more-vertical"></i>
+                                                            </div>
+                                                            <div class="more-details">
+                                                                <div>Top Rated</div>
+                                                                <div>Trending</div>
+                                                                <div>Most Purchased</div>
+                                                                <div>Newly Added</div>
+                                                                <div>Free</div>
+                                                                <div>Handpicked</div>
+                                                            </div>
+                                                                
+                                                        </td>
+                                                    </tr>
                                                 @endforeach
                                                 {{-- <tr>
                                                     <td>
