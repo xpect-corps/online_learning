@@ -10,8 +10,7 @@
                         <div class="mb-4">
 
                             <div class="settings-inner-blk p-0">
-                                <div
-                                    class="sell-course-head comman-space d-flex justify-content-between align-items-center">
+                                <div class="sell-course-head comman-space d-flex justify-content-between align-items-center">
                                     <h3>Top Courses</h3>
                                 </div>
                                 <div class="comman-space pb-0">
@@ -59,7 +58,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="settings-tickets-blk course-instruct-blk table-responsive">
+                                    <div class="settings-tickets-blk course-instruct-blk ">
 
                                         <table class="table table-nowrap mb-2">
                                             <thead>
@@ -232,7 +231,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="settings-tickets-blk course-instruct-blk table-responsive">
+                                    <div class="settings-tickets-blk course-instruct-blk ">
 
                                         <table class="table table-nowrap mb-2">
                                             <thead>
@@ -240,6 +239,7 @@
                                                     <th>COURSES</th>
                                                     <th>STUDENTS</th>
                                                     <th>STATUS</th>
+                                                    <th>ACTIONS</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -277,11 +277,29 @@
                                                         <td>
                                                             @if ($course->status == 1)
                                                                 <span class="badge info-low">Live</span>
+                                                            @else
+                                                                <span class="badge info-inter">Darft</span>
+                                                            @endif
                                                         </td>
-                                                    @else
-                                                        <span class="badge info-inter">Darft</span>
-                                                @endif
-                                                </tr>
+                                                        <td>
+                                                            <div class="actionBtn">
+                                                                <span class="more">
+                                                                    <button type="button" onclick="showDropdown()"> <i
+                                                                            class="feather-more-vertical" id="showDropdown"></i></button>
+                                                                </span>
+                                                                <ul class="more-details hidden" id="more-details">
+                                                                    <li> <a href="">Top Rated</a></li>
+                                                                    <li> <a href="">Trending</a></li>
+                                                                    <li> <a href="">Most Purchased</a></li>
+                                                                    <li> <a href="">Newly Added</a></li>
+                                                                    <li> <a href="">Free</a></li>
+                                                                    <li> <a href="">Handpicked</a></li>
+                                                                </ul>
+                                                            </div>
+
+
+                                                        </td>
+                                                    </tr>
                                                 @endforeach
                                                 {{-- <tr>
                                                     <td>
@@ -364,7 +382,24 @@
         </div>
     </div>
 
+
+
     @push('scripts')
-        <script></script>
+        <script>
+            const list = document.querySelector('.more-details');
+            const btn = document.querySelector('#showDropdown')
+
+            btn.addEventListener('click', (e) => {
+
+                list.classList.toggle('hidden')
+                e.stopPropagation()
+            })
+
+            document.addEventListener('click', (e) => {
+                if (e.target.closest('.more-details')) return
+
+                list.classList.add('hidden')
+            })
+        </script>
     @endpush
 @endsection

@@ -204,4 +204,51 @@ flex:1 0 40px;
   top: 0;
   margin: 115px;
 }
+.actionBtn{
+  position: relative;
+ 
+}
+.more{
+  list-style: none;
+}
+.more-details{
+  position: absolute;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: #fff;
+  z-index: 10;
+  top: 32px;
+  left: -56px;
+  padding: 10px 0;
+width: 150px;
+}
+.more button{
+  border: 0;
+background-color: #fff;
+}
+.more-details li{
+list-style: none;
+padding: 5px 10px
+}
+.more-details li a{
+  color:#212529;
+  font-weight: 400;
+font-size: 14px;
+}
+.more-details li a:hover{
+ text-decoration: none;
+ color:#212529;
+ 
+}
+.more-details li:hover {
+ background-color: #cee0ff;
+}
+.hidden {
+  display:none;
+}
 
+
+.settings-tickets-blk{
+  overflow-x: auto;
+}
+settings-tickets-blk course-instruct-blk 

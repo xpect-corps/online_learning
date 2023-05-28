@@ -1126,6 +1126,9 @@ console.log(fileName);
 		span.innerText = fileName;
 	});
 
+
+		
+
 	
 	// videoupload 
 
@@ -1154,7 +1157,6 @@ console.log(fileName);
 	// profile upload 
 
 	
-	
-
-	
 })(jQuery);
+
+
