@@ -63,6 +63,11 @@
                         <i class="ri-bookmark-line"></i> Tag
                     </a>
                 </li>
+                <li class="nav-item ">
+                    <a href="{{ url('/admin/settings') }}" class="nav-link">
+                        <i class="ri-settings-4-line"></i> Settings
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
