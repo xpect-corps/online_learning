@@ -51,13 +51,14 @@
                         <div class="news-letter">
                             <form>
                                 <input type="text" class="form-control" placeholder="Enter your email address"
-                                    name="email">
+                                    name="email" style="    background: #000 !important;
+    color: #fff;">
                             </form>
                         </div>
                         <div class="footer-contact-info">
                             <div class="footer-address">
-                                <img src="assets/img/icon/icon-20.svg" alt class="img-fluid">
-                                <p> 3556 Beech Street, San Francisco,<br> California, CA 94108 </p>
+                                <img src="{{asset('img/icon/icon-20.svg')}}" alt class="img-fluid">
+                                <p class="text-white"> 3556 Beech Street, San Francisco,<br> California, CA 94108 </p>
                             </div>
                             <p>
                                 <img src="assets/img/icon/icon-19.svg" alt class="img-fluid">
@@ -93,7 +94,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="copyright-text">
-                            <p class="mb-0">&copy; 2023 DreamsLMS. All rights reserved.</p>
+                            <p class="mb-0">&copy; 2023 Xpect corps. All rights reserved.</p>
                         </div>
                     </div>
                 </div>

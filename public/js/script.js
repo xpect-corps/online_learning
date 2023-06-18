@@ -121,6 +121,12 @@ Version      : 1.0
 			width: '100%'
 		});
 	}
+	if ($('.select-language').length > 0) {
+		$('.select-language').select2({
+			minimumResultsForSearch: -1,
+			width: '100%'
+		});
+	}
 
 
 	// multiselect 
@@ -1126,6 +1132,9 @@ console.log(fileName);
 		span.innerText = fileName;
 	});
 
+
+		
+
 	
 	// videoupload 
 
@@ -1154,7 +1163,6 @@ console.log(fileName);
 	// profile upload 
 
 	
-	
-
-	
 })(jQuery);
+
+

@@ -3358,12 +3358,12 @@
             <div class="row">
 
                 <div class="col-lg-12 col-md-12  aos-init aos-animate" data-aos="fade-down">
-                    <div class="app-section">
+                    <div class="app-section" >
                         <div class="row">
                             <div class="col-lg-7 col-md-12 d-flex align-items-center  aos-init aos-animate"
                                 data-aos="fade-up">
                                 <div class="header-five-title mb-3">
-                                    <h2 class="mb-3">Download our app from  <span style="color:#2766CF"> App-store</span> for free</h2>
+                                    <h2 class="mb-5">Download our app from  <span style="color:#2766CF"> App-store</span> for free</h2>
                                     <a href="">
                                     <img width="25%" src="{{asset('img/img/playstore.png')}}" alt="">
                                     </a>
@@ -3396,12 +3396,13 @@
                     <button type="button" class="btn-close video-modal-close  rounded-pill bg-white position-absolute " data-bs-dismiss="modal" aria-label="Close"></button>
 
                     <div class="ratio ratio-16x9">
-                        <video width="320" height="240" controls>
+                        {{-- <video width="320" height="240" controls>
                             <source src="{{asset('img/video1.mp4')}}" type="video/mp4">
                             <source src="movie.ogg" type="video/ogg">
                             Your browser does not support the video tag.
-                          </video>
-                    </div>
+                          </video> --}}
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/ChZceDRGmW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\PaymentController;
+use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Admin\TutorController;
 use App\Http\Controllers\Admin\TagController;
@@ -67,6 +68,15 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
         Route::post('add-tag',[TagController::class,'store'])->name('add_tag');
         Route::post('update-tag',[TagController::class,'update'])->name('update_tag');
         Route::get('delete_tag/{id}',[TagController::class,'destroy']);
+        
+        // settings
+        Route::get('/settings', [SettingsController::class, 'index'])->name('settings');
+        Route::get('/settings/general', [SettingsController::class, 'general'])->name('settings.genaral');
+        Route::get('/settings/permission', [SettingsController::class, 'permissions'])->name('settings.permissions');
+        Route::get('/settings/permissioncreate', [SettingsController::class, 'permissionscreate'])->name('settings.permissions.create');
+        Route::get('/settings/permissionedit', [SettingsController::class, 'permissionsedit'])->name('settings.permissions.edit');
+        Route::get('/settings/payments', [SettingsController::class, 'payments'])->name('settings.payments');
+     
 
 
     });

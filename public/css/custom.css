@@ -79,7 +79,7 @@
   width: 335px;
   max-width: 100%;
   position: absolute;
-  top: -113px;
+  top: -117px;
 }
 
 .app-section {
@@ -139,7 +139,7 @@
 }
 
 .app-adv-section {
-  padding: 160px 0px 0px;
+  padding: 160px 0px 40px;
 }
 
 .admin-main-wrapper{
@@ -204,10 +204,147 @@ flex:1 0 40px;
   top: 0;
   margin: 115px;
 }
-
-.more{
+.actionBtn{
   position: absolute;
+ 
 }
 .more{
+  list-style: none;
+}
+.more-details{
+  position: absolute;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: #fff;
+  z-index: 10;
+  top: 32px;
+  left: -56px;
+  padding: 10px 0;
+width: 150px;
+}
+.more button{
+  border: 0;
+background-color: #fff;
+}
+.more-details li{
+list-style: none;
+padding: 5px 10px
+}
+.more-details li a{
+  color:#212529;
+  font-weight: 400;
+font-size: 14px;
+}
+.more-details li a:hover{
+ text-decoration: none;
+ color:#212529;
+ 
+}
+.more-details li:hover {
+ background-color: #cee0ff;
+}
+.hidden {
+  display:none;
+}
+.settings-tickets-blk{
+  overflow-x: auto;
+}
+.settings-cards{
+  box-shadow: 4px 5px 15px -3px rgba(0,0,0,0.1);
+border-radius: 18px;
+}
+.course-inner-content a:hover{
+  text-decoration: none !important;
+}
+
+.form-group  .imageWrapper {
+  width:150px;
+ height:150px;
+  overflow: hidden;
   position: relative;
+
+}
+.form-group  .imageWrapper img {
+  height: 105%;
+  width: initial;
+  max-height: 100%;
+  max-width: initial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.widget-btn .btn-info-light:hover{
+	color: #fff !important; 
+    background-color: #1397d6 !important;
+    border:1px solid #1397d6 !important;
+}
+
+/* accordation  */
+
+[data-toggle=collapse] i:before {
+  content: "";
+}
+
+[data-toggle=collapse].collapsed i:before {
+  content: "";
+}
+
+#accordion .card-header {
+  margin-bottom: 8px;
+}
+#accordion .accordion-title {
+  position: relative;
+  display: block;
+  padding: 8px 0 8px 50px;
+  background: #213744;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+  transition: all 0.4s ease-in-out;
+}
+#accordion .accordion-title i {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background: radial-gradient(rgba(33, 55, 68, 0.8), #213744);
+  text-align: center;
+  border-right: 1px solid transparent;
+}
+#accordion .accordion-title:hover {
+  padding-left: 60px;
+  background: #213744;
+  color: #fff;
+}
+#accordion .accordion-title:hover i {
+  border-right: 1px solid #fff;
+}
+#accordion .accordion-body {
+  padding: 40px 55px;
+}
+#accordion .accordion-body ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#accordion .accordion-body li {
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+}
+#accordion .accordion-body li:before {
+  content: "";
+  padding-right: 5px;
+  font-family: "Flaticon";
+  font-size: 16px;
+  font-style: normal;
+  color: #213744;
 }

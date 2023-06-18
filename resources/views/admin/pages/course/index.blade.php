@@ -58,7 +58,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="settings-tickets-blk course-instruct-blk table-responsive">
+                                    <div class="settings-tickets-blk course-instruct-blk ">
 
                                         <table class="table table-nowrap mb-2">
                                             <thead>
@@ -231,7 +231,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="settings-tickets-blk course-instruct-blk table-responsive">
+                                    <div class="settings-tickets-blk course-instruct-blk ">
 
                                         <table class="table table-nowrap mb-2">
                                             <thead>
@@ -282,18 +282,22 @@
                                                             @endif
                                                         </td>
                                                         <td>
-                                                            <div class="more">
-                                                                <i class="feather-more-vertical"></i>
+                                                            <div class="actionBtn">
+                                                                <span class="more">
+                                                                    <button type="button" onclick="showDropdown()"> <i
+                                                                            class="feather-more-vertical" id="showDropdown"></i></button>
+                                                                </span>
+                                                                <ul class="more-details hidden" id="more-details">
+                                                                    <li> <a href="">Top Rated</a></li>
+                                                                    <li> <a href="">Trending</a></li>
+                                                                    <li> <a href="">Most Purchased</a></li>
+                                                                    <li> <a href="">Newly Added</a></li>
+                                                                    <li> <a href="">Free</a></li>
+                                                                    <li> <a href="">Handpicked</a></li>
+                                                                </ul>
                                                             </div>
-                                                            <div class="more-details">
-                                                                <div>Top Rated</div>
-                                                                <div>Trending</div>
-                                                                <div>Most Purchased</div>
-                                                                <div>Newly Added</div>
-                                                                <div>Free</div>
-                                                                <div>Handpicked</div>
-                                                            </div>
-                                                                
+
+
                                                         </td>
                                                     </tr>
                                                 @endforeach
@@ -378,7 +382,24 @@
         </div>
     </div>
 
+
+
     @push('scripts')
-        <script></script>
+        <script>
+            const list = document.querySelector('.more-details');
+            const btn = document.querySelector('#showDropdown')
+
+            btn.addEventListener('click', (e) => {
+
+                list.classList.toggle('hidden')
+                e.stopPropagation()
+            })
+
+            document.addEventListener('click', (e) => {
+                if (e.target.closest('.more-details')) return
+
+                list.classList.add('hidden')
+            })
+        </script>
     @endpush
 @endsection
