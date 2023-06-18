@@ -51,7 +51,8 @@
                         <div class="news-letter">
                             <form>
                                 <input type="text" class="form-control" placeholder="Enter your email address"
-                                    name="email">
+                                    name="email" style="    background: #000 !important;
+                                    color: #fff;">
                             </form>
                         </div>
                         <div class="footer-contact-info">
@@ -93,7 +94,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="copyright-text">
-                            <p class="mb-0">&copy; 2023 DreamsLMS. All rights reserved.</p>
+                            <p class="mb-0">&copy; 2023 Xpect corps. All rights reserved.</p>
                         </div>
                     </div>
                 </div>

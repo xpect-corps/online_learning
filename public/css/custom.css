@@ -79,7 +79,7 @@
   width: 335px;
   max-width: 100%;
   position: absolute;
-  top: -113px;
+  top: -117px;
 }
 
 .app-section {
@@ -139,7 +139,7 @@
 }
 
 .app-adv-section {
-  padding: 160px 0px 0px;
+  padding: 160px 0px 40px;
 }
 
 .admin-main-wrapper{

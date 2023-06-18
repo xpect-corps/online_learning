@@ -1518,14 +1518,16 @@ html.menu-opened body {
 -----------------------*/
 
 .footer {
-    background-color: #fff;
+    background-color: #0f0f0f;
 	position: relative;
 }
 .footer-top {
 	padding-top: 60px;
+	padding-bottom: 60px;
 	position: relative;
 	z-index: 9;
 	font-size: 14px;
+   
 }
 .footer-top .footer-about-content {
 	max-width: 315px;
@@ -1536,7 +1538,7 @@ html.menu-opened body {
     background-color: #ffffff;
 }
 .footer-title {
-    color: #0A142F;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 26px;
@@ -1556,7 +1558,7 @@ html.menu-opened body {
     max-width: 100%;
 }
 .footer-widget .footer-about-content p {
-	color: #000000;
+	color: #fff;
 }
 .footer-widget .footer-about-content p:last-child {
 	margin-bottom: 0;
@@ -1569,7 +1571,7 @@ html.menu-opened body {
 	margin-bottom: 0;
 }
 .footer-menu ul li a {
-	color: #000;
+	color: #fff;
 	transition: all 0.4s ease 0s;
 }
 .footer-menu ul li a i {
@@ -1608,12 +1610,14 @@ html.menu-opened body {
 }
 .footer-bottom .copyright {
     padding: 40px 0;
+    border-top: 1px solid #fff;
 }
 .footer-bottom {
 	font-size: 14px;
+    background-color: #0f0f0f;
 }
 .footer-bottom .copyright-text p {
-	color: #000000;
+	color: #fff;
 	text-align: right;
 }
 .footer-bottom .copyright-text p a:hover {
@@ -1633,7 +1637,7 @@ html.menu-opened body {
 	list-style: none;
 }
 .privacy-policy ul li a {
-	color: #000;
+	color: #fff;
 }
 .privacy-policy ul li a:hover {
 	color: #F66962;

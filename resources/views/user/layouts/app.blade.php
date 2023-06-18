@@ -6,9 +6,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Dreams LMS</title>
+    <title>Xpect Corps</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.svg') }}">
+    <link rel="shortcut icon" type="image" href="{{ asset('img/img/favicon.png') }}">
 
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
 
